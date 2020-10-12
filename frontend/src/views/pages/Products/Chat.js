@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Member (props) {
+function Chat (props) {
 
     const {} = props;
 
     return (
         <Container>
-            Member
+            Chat
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default Member;
+export default Chat;

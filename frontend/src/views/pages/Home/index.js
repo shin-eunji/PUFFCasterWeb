@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Header from "../../components/Header";
 
 function Home (props) {
 
@@ -7,7 +8,7 @@ function Home (props) {
 
     return (
         <Container>
-            Home
+            <Header/>
         </Container>
     )
 }

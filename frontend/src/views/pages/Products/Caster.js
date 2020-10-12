@@ -1,20 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function NavItem (props) {
+function Caster (props) {
 
-    const {
-        name
-    } = props;
+    const {} = props;
 
     return (
         <Container>
-            {name}
+            Caster
         </Container>
     )
 }
 
 const Container = styled.div`
-    cursor: pointer;
 `
-export default NavItem;
+export default Caster;
