@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Route, Switch} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 
-import Home from "./views/pages/Home";
-
-function Routes (props) {
+function Products (props) {
 
     const {} = props;
 
     return (
         <Container>
             <Switch>
-                <Route exact path={'/'} component={Home} />
+                <Route path={} component={}/>
             </Switch>
         </Container>
     )
@@ -19,4 +17,4 @@ function Routes (props) {
 
 const Container = styled.div`
 `
-export default Routes;
+export default Products;

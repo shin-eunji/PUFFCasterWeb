@@ -8,4 +8,5 @@ const API = {
     updateTodo: (id, data) => Fetchjson.update(`/todo/${id}`, data)
 }
 
+
 export default API;

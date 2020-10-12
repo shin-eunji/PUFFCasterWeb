@@ -8,8 +8,6 @@ function App () {
 
     return (
         <Container>
-
-            gadgadsadggwedsx
             <Routes/>
         </Container>
     )
