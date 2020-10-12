@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__top_icn_twitch" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#7d8593}
+        </style>
+    </defs>
+    <g id="prefix__그룹_10170" data-name="그룹 10170" transform="translate(-1283.921 -75.221)">
+        <path id="prefix__패스_7992" d="M1292.246 78.221l-4.826 4.8v17.233h5.747v4.773l4.773-4.773h3.835l8.645-8.663v-13.37zm16.242 12.485l-3.839 3.811h-3.834l-3.364 3.364v-3.364h-4.3V80.154h15.338z" class="prefix__cls-1" data-name="패스 7992"/>
+        <path id="prefix__사각형_8398" d="M0 0H1.686V5.082H0z" class="prefix__cls-1" data-name="사각형 8398" transform="translate(1298.558 83.659)"/>
+        <path id="prefix__사각형_8399" d="M0 0H1.686V5.082H0z" class="prefix__cls-1" data-name="사각형 8399" transform="translate(1303.862 83.659)"/>
+    </g>
+    <path id="prefix__사각형_8400" d="M0 0H30V30H0z" data-name="사각형 8400" style="fill:none"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__main_cam_icn_camera" width="80" height="60" viewBox="0 0 80 60">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:4px}
+        </style>
+    </defs>
+    <path id="prefix__사각형_8524" d="M0 0H80V60H0z" data-name="사각형 8524" style="fill:none"/>
+    <g id="prefix__그룹_10234" data-name="그룹 10234" transform="translate(-280 -1835)">
+        <path id="prefix__패스_8042" d="M33.953 63.5h-4.274L23.5 57.466A5.145 5.145 0 0 0 19.9 56h-9.8a5.145 5.145 0 0 0-3.6 1.466L.321 63.5h-4.274A7.068 7.068 0 0 0-11 70.547v23.406A7.068 7.068 0 0 0-3.953 101h37.906A7.068 7.068 0 0 0 41 93.953V70.547a7.068 7.068 0 0 0-7.047-7.047z" class="prefix__cls-2" data-name="패스 8042" transform="translate(305 1788)"/>
+        <circle id="prefix__타원_151" cx="11" cy="11" r="11" class="prefix__cls-2" data-name="타원 151" transform="translate(309 1859.25)"/>
+    </g>
+</svg>

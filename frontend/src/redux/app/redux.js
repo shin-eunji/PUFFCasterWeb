@@ -6,7 +6,6 @@ const initialState = {
 
 export const Action = createActions({
     updateState: ['state'],
-    handlePopconfirm: ['title']
 },{prefix: 'APP'})
 
 export const reducer = createReducer(initialState, {

@@ -1,4 +1,4 @@
-export const routes = [
+export const NavRoutes = [
     {
         name: '제품',
         to: '/products',
@@ -11,7 +11,7 @@ export const routes = [
             },
             {
                 name: 'puff chat',
-                to: '/products/play',
+                to: '/products/chat',
                 isActive: false,
             },
             {
@@ -32,3 +32,26 @@ export const routes = [
         isActive: false,
     }
 ]
+
+export const SubRoutes = [
+    {
+        sort: 'caster',
+        name: 'puff caster',
+        nameKo: '퍼프캐스트',
+        to: '/products/caster',
+    },
+    {
+        sort: 'chat',
+        name: 'puff chat',
+        nameKo: '퍼프 채팅창',
+        to: '/products/chat',
+    },
+    {
+        sort: 'cam',
+        name: 'puff cam',
+        nameKo: '퍼프 캠',
+        to: '/products/cam',
+    },
+]
+
+export const dots = ['caster', 'chat', 'cam']

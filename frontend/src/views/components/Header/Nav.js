@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {routes} from "../Data/Routes";
+import {NavRoutes} from "../Data/Routes";
+
 import NavItem from "./NavItem";
 
 function Nav (props) {
@@ -12,12 +13,15 @@ function Nav (props) {
     return (
         <Container>
             {
-                routes.map((route, index) => <NavItem key={index} {...route} location={location} />)
+                NavRoutes.map((route, index) => <NavItem key={index} {...route} location={location} />)
             }
         </Container>
     )
 }
 
 const Container = styled.div`
+    display:flex;
+    align-items:center;  
+    justify-content:center
 `
 export default Nav;

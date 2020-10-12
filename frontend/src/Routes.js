@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, Redirect} from "react-router-dom";
 
-import Home from "./views/pages/Home";
+import Products from "./views/pages/Products";
 
 function Routes (props) {
 
@@ -11,7 +11,9 @@ function Routes (props) {
     return (
         <Container>
             <Switch>
-                <Route exact path={'/'} component={Home} />
+                <Route path={'/products'} component={Products} />
+
+                <Redirect from={'/'} to={'/products/caster'}/>
             </Switch>
         </Container>
     )

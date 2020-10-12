@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="62.467" viewBox="0 0 80 62.467">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-3{fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3.5px}.prefix__cls-2{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="prefix__main_cam_icn_game" transform="translate(0 2.467)">
+        <path id="prefix__사각형_8526" d="M0 0H80V60H0z" data-name="사각형 8526" style="fill:none"/>
+        <g id="prefix__그룹_10233" data-name="그룹 10233" transform="translate(-152 -51.5)">
+            <path id="prefix__패스_8051" d="M211 66.5h-38a7.021 7.021 0 0 0-7 7v23a7.021 7.021 0 0 0 7 7h4a7.021 7.021 0 0 0 7-7v-6.4a6.619 6.619 0 0 1 6.6-6.6h2.8a6.619 6.619 0 0 1 6.6 6.6v6.4a7.021 7.021 0 0 0 7 7h4a7.021 7.021 0 0 0 7-7v-23a7.021 7.021 0 0 0-7-7z" class="prefix__cls-2" data-name="패스 8051"/>
+            <circle id="prefix__타원_156" cx="5" cy="5" r="5" class="prefix__cls-2" data-name="타원 156" transform="translate(171 74)"/>
+            <path id="prefix__선_3" d="M0 0L10 0" class="prefix__cls-3" data-name="선 3" transform="translate(202.5 79)"/>
+            <path id="prefix__선_4" d="M0 0L0 10" class="prefix__cls-3" data-name="선 4" transform="translate(207.5 74)"/>
+            <path id="prefix__패스_8052" d="M193.457 51.5a16.61 16.61 0 0 0 1.756 1.768 4.985 4.985 0 0 1 2.287 3.857 5.132 5.132 0 0 1-2.074 4.339c-1.383 1.236-2.926 1.822-2.926 5.036" class="prefix__cls-2" data-name="패스 8052"/>
+        </g>
+    </g>
+</svg>
