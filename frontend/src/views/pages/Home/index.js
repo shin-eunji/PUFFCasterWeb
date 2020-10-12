@@ -8,7 +8,7 @@ function Home (props) {
 
     return (
         <Container>
-            <Header/>
+            Home
         </Container>
     )
 }

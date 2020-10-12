@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__img_error" width="200" height="110" viewBox="0 0 200 110">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fccf22}.prefix__cls-3{fill:#fe4170}.prefix__cls-9{fill:#323232}
+        </style>
+    </defs>
+    <path id="prefix__패스_8033" d="M-1.778 0H6L3.778 7.778H-4z" class="prefix__cls-1" data-name="패스 8033" transform="translate(9 66)"/>
+    <path id="prefix__패스_8034" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8034" transform="translate(194 22)" style="fill:#01bdfd"/>
+    <path id="prefix__패스_8035" d="M-1.778 0H6L3.778 7.778H-4z" class="prefix__cls-3" data-name="패스 8035" transform="translate(176 1)"/>
+    <path id="prefix__패스_8036" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8036" transform="translate(19 98)" style="fill:#05b66b"/>
+    <path id="prefix__패스_8037" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8037" transform="translate(29 80)" style="fill:#7167ff"/>
+    <path id="prefix__패스_8038" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8038" transform="translate(171 50)" style="fill:#cced0c"/>
+    <circle id="prefix__타원_158" cx="55" cy="55" r="55" class="prefix__cls-1" data-name="타원 158" transform="translate(45)"/>
+    <path id="prefix__빼기_2" d="M3125-3752a54.7 54.7 0 0 1-20.855-4.092 54.825 54.825 0 0 1-17.192-11.192 54.9 54.9 0 0 1-11.9-16.667 54.552 54.552 0 0 1-4.991-20.517 61.162 61.162 0 0 0 22.1 24.882A60.8 60.8 0 0 0 3125-3770a60.8 60.8 0 0 0 32.838-9.584 61.16 61.16 0 0 0 22.105-24.882 54.55 54.55 0 0 1-4.991 20.517 54.9 54.9 0 0 1-11.9 16.667 54.822 54.822 0 0 1-17.192 11.192A54.694 54.694 0 0 1 3125-3752z" data-name="빼기 2" transform="translate(-3025 3862)" style="fill:#ffad41"/>
+    <ellipse id="prefix__타원_161" cx="22" cy="12" data-name="타원 161" rx="22" ry="12" transform="translate(78 4)" style="fill:#fdde65"/>
+    <g id="prefix__그룹_10236" data-name="그룹 10236" transform="translate(-787 -88)">
+        <rect id="prefix__사각형_8527" width="5" height="20" class="prefix__cls-9" data-name="사각형 8527" rx="2.5" transform="rotate(45 285.183 1115.269)"/>
+        <rect id="prefix__사각형_8528" width="5" height="20" class="prefix__cls-9" data-name="사각형 8528" rx="2.5" transform="rotate(135 409.022 250.93)"/>
+    </g>
+    <g id="prefix__그룹_10237" data-name="그룹 10237" transform="translate(-746.7 -88)">
+        <rect id="prefix__사각형_8527-2" width="5" height="20" class="prefix__cls-9" data-name="사각형 8527" rx="2.5" transform="rotate(45 285.183 1115.269)"/>
+        <rect id="prefix__사각형_8528-2" width="5" height="20" class="prefix__cls-9" data-name="사각형 8528" rx="2.5" transform="rotate(135 409.022 250.93)"/>
+    </g>
+    <g id="prefix__그룹_10238" data-name="그룹 10238" transform="translate(-620 -191)">
+        <path id="prefix__패스_8054" d="M0 0l13 3v7.5a6.5 6.5 0 0 1-13 0z" class="prefix__cls-3" data-name="패스 8054" transform="translate(723 260)"/>
+        <path id="prefix__합치기_2" d="M3096.729-3867.954c-.6-.637-1.06-3.279-1.008-5.135-1.586-.314-3.35-.616-5.3-.887a35.933 35.933 0 0 0-20.423 3.444s.419-4.531 12.894-8.68 23.97 9.427 23.97 9.427a44.285 44.285 0 0 0-9.893-3.047c.061.449.109.934.144 1.42.128 1.764.073 3.529-.261 3.529a.183.183 0 0 1-.123-.071z" data-name="합치기 2" transform="translate(-2367.259 4139.031)" style="opacity:.2"/>
+        <path id="prefix__패스_8057" d="M-2204.212 4044.07a32.187 32.187 0 0 1 19.448-6.271c11.984 0 18.552 6.718 18.552 6.718" data-name="패스 8057" transform="translate(2906.212 -3777.517)" style="stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none"/>
+    </g>
+    <path id="prefix__사각형_8529" d="M0 0H200V110H0z" data-name="사각형 8529" style="fill:none"/>
+</svg>

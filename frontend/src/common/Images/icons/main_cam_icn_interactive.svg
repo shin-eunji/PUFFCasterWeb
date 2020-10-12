@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__main_cam_icn_interactive" width="80" height="60" viewBox="0 0 80 60">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-3{fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3.5px}.prefix__cls-2{stroke-linejoin:round}
+        </style>
+    </defs>
+    <path id="prefix__사각형_8525" d="M0 0H80V60H0z" data-name="사각형 8525" style="fill:none"/>
+    <g id="prefix__그룹_10235" data-name="그룹 10235" transform="translate(-680 -1828)">
+        <circle id="prefix__타원_152" cx="6.5" cy="6.5" r="6.5" class="prefix__cls-2" data-name="타원 152" transform="translate(714 1837)"/>
+        <path id="prefix__패스_8043" d="M112.5 79.912c0-5.9-3-10.942-7.25-13" class="prefix__cls-3" data-name="패스 8043" transform="translate(619.5 1781.5)"/>
+        <path id="prefix__패스_8044" d="M96.75 66.911c-4.245 2.059-7.25 7.1-7.25 13" class="prefix__cls-3" data-name="패스 8044" transform="translate(619.5 1781.5)"/>
+        <circle id="prefix__타원_153" cx="6.5" cy="6.5" r="6.5" class="prefix__cls-2" data-name="타원 153" transform="translate(714 1858.5)"/>
+        <path id="prefix__패스_8045" d="M112.5 101.412c0-5.9-3-10.942-7.25-13" class="prefix__cls-3" data-name="패스 8045" transform="translate(619.5 1781.5)"/>
+        <path id="prefix__패스_8046" d="M96.75 88.411c-4.245 2.059-7.25 7.1-7.25 13" class="prefix__cls-3" data-name="패스 8046" transform="translate(619.5 1781.5)"/>
+        <circle id="prefix__타원_154" cx="6.5" cy="6.5" r="6.5" class="prefix__cls-2" data-name="타원 154" transform="translate(691 1858.5)"/>
+        <path id="prefix__패스_8047" d="M89.5 101.412c0-5.9-3-10.942-7.25-13" class="prefix__cls-3" data-name="패스 8047" transform="translate(619.5 1781.5)"/>
+        <path id="prefix__패스_8048" d="M73.75 88.411c-4.245 2.059-7.25 7.1-7.25 13" class="prefix__cls-3" data-name="패스 8048" transform="translate(619.5 1781.5)"/>
+        <circle id="prefix__타원_155" cx="6.5" cy="6.5" r="6.5" class="prefix__cls-2" data-name="타원 155" transform="translate(737 1858.5)"/>
+        <path id="prefix__패스_8049" d="M135.5 101.412c0-5.9-3.005-10.942-7.25-13" class="prefix__cls-3" data-name="패스 8049" transform="translate(619.5 1781.5)"/>
+        <path id="prefix__패스_8050" d="M119.75 88.411c-4.245 2.059-7.25 7.1-7.25 13" class="prefix__cls-3" data-name="패스 8050" transform="translate(619.5 1781.5)"/>
+        <path id="prefix__선_2" d="M0 0L69 0" class="prefix__cls-3" data-name="선 2" transform="translate(686 1882.912)"/>
+    </g>
+</svg>

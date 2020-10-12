@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route} from 'react-router-dom';
+import Caster from "./Caster";
+import Chat from "./Chat";
+import Cam from "./Cam";
 
 function Products (props) {
 
@@ -9,7 +12,9 @@ function Products (props) {
     return (
         <Container>
             <Switch>
-                <Route path={} component={}/>
+                <Route exact path={'/products/caster'} component={Caster}/>
+                <Route path={'/products/chat'} component={Chat}/>
+                <Route path={'/products/cam'} component={Cam}/>
             </Switch>
         </Container>
     )
