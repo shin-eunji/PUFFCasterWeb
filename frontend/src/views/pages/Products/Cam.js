@@ -7,7 +7,6 @@ import {featureData as FeatureData} from "../../components/Data/Feature";
 import Visual from "../../components/Visual";
 import Features from "./Section";
 import Service from "./Service";
-import Footer from "./Footer";
 
 function Cam (props) {
 
@@ -20,8 +19,6 @@ function Cam (props) {
             <Features data={FeatureData.cam}/>
 
             <Service data={ProductData.cam}/>
-
-            <Footer/>
         </Container>
     )
 }

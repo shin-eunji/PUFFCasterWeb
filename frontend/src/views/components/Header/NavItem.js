@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {navigate} from "../../../lib/History";
 import cn from 'classnames'
@@ -6,6 +6,7 @@ import cn from 'classnames'
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {Images} from "../../../common/Images";
+import SubMenu from "./SubMenu";
 
 function NavItem(props) {
 
@@ -13,24 +14,44 @@ function NavItem(props) {
         name,
         to,
         isActive,
-        subRoutes
+        subRoutes,
+        location,
     } = props;
+
+    const [menu, setMenu] = useState(false);
+
+    const handleMenu = () => {
+        if (subRoutes) {
+            setMenu(true)
+        } else {
+            navigate(to)
+        }
+    }
 
     return (
         <Container className={cn('NavItem', {isActive})}>
-            <ItemName onClick={() => navigate(to)}>
+            <ItemName onClick={handleMenu}>
                 {name}
                 {
                     subRoutes &&
                     <img src={Images.gnb_dropdown} alt="dropdown"/>
                 }
             </ItemName>
+            {
+                menu &&
+                    <SubMenu name={name}
+                             location={location}
+                             routes={subRoutes}
+                             onClose={() => setMenu(false)}
+                    />
+            }
 
         </Container>
     )
 }
 
 const Container = styled.div`
+    position:relative;
     cursor: pointer;
     margin-left: 50px;
 `
