@@ -26,7 +26,7 @@ export const featureData = {
         {
             thumbnail: `EASY-PEASY`,
             title: `쉽게 시청자와\n소통할 수 있는 방법`,
-            description: `시청자와의 소통은 언제나 큰 고민입니다.\n 간단한 퍼프 플레이 세팅으로 스트리머는\n 고민을 없애고 팬들과 새로운 방식의 커뮤\n니케이션을 경험할 수 있습니다.`,
+            description: `시청자와의 소통은 언제나 큰 고민입니다.\n간단한 퍼프 플레이 세팅으로 스트리머는\n고민을 없애고 팬들과 새로운 방식의 커뮤\n니케이션을 경험할 수 있습니다.`,
         },
         {
             thumbnail: `BETTER EXPERIENCE`,
