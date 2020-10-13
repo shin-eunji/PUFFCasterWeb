@@ -10,6 +10,8 @@ import visual_chat from './visual_play.png'
 
 import parttern1 from './main_parttern1.svg'
 import parttern2 from './main_parttern2.svg'
+import service_parttern1 from './visual_parttern1.svg'
+import service_parttern2 from './visual_parttern2.svg'
 
 
 
@@ -20,6 +22,8 @@ export const Images = {
     visual_chat,
     parttern1,
     parttern2,
+    service_parttern1,
+    service_parttern2,
 
     caster_youtube,
     caster_twitch,

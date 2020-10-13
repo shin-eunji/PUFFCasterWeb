@@ -16,9 +16,9 @@ function FeatureItem(props) {
     } = props;
 
     return (
-        <Container className={cn(reverse)}>
+        <Container className={cn({reverse})}>
             <SContentContainer>
-                <Text className={cn(reverse)}>
+                <Text className={cn({reverse})}>
                     <Thumbnail>{thumbnail}</Thumbnail>
                     <Title>{title}</Title>
                     <Description>{description}</Description>
@@ -32,9 +32,6 @@ function FeatureItem(props) {
 const Container = styled.div`
     display:flex;
     margin: 150px 0;
-    .reverse & {
-        flex-direction: row-reverse;
-    }
 `
 const SContentContainer = styled(ContentContainer)`
     display:flex;
@@ -45,10 +42,10 @@ const SContentContainer = styled(ContentContainer)`
 `;
 const Text = styled.div`
     flex: 1;
-    margin-right: 60px;
+    width: ${pxToRem(320)};
+    white-space: pre-wrap;
     .reverse & {
-        margin-left: 60px;
-        margin-right: 0;
+        margin-left: ${pxToRem(60)};
     }
 `;
 const Thumbnail = styled.div`
@@ -59,14 +56,14 @@ const Thumbnail = styled.div`
 `;
 const Title = styled.h3`
     color: #000;  
-    font-size: ${pxToRem(42)};
+    font-size: ${pxToRem(38)};
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: ${pxToRem(30)};
 `;
 const Description = styled.p`
     color: #222;
-    font-size: ${pxToRem(20)};
+    font-size: ${pxToRem(18)};
     font-weight: 400;
     font-stretch: normal;
     line-height: 1.8;

@@ -55,3 +55,18 @@ export const SubRoutes = [
 ]
 
 export const dots = ['caster', 'chat', 'cam']
+
+export const info = [
+    {
+        name: '서비스이용약관',
+        to: '/',
+    },
+    {
+        name: '개인정보처리방침',
+        to: '/',
+    },
+    {
+        name: '도움말',
+        to: '/',
+    },
+]
