@@ -5,6 +5,7 @@ import cn from 'classnames';
 import {ContentContainer} from "../../../../common/Layout/Components.Styled";
 import {Color} from "../../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../../common/Text/Text.Styled";
+import {navigate} from "../../../../lib/History";
 
 function FeatureItem(props) {
 
@@ -23,7 +24,7 @@ function FeatureItem(props) {
                     <Title>{title}</Title>
                     <Description>{description}</Description>
                 </Text>
-                <Preview></Preview>
+                <Preview onClick={() => navigate('/products/cam/detail')}></Preview>
             </SContentContainer>
         </Container>
     )
@@ -73,6 +74,7 @@ const Preview = styled.div`
     height: ${pxToRem(500)};
     border-radius: ${pxToRem(6)};
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
-    background-color: #272c33;  
+    background-color: #272c33;
+    cursor: pointer;
 `;
 export default FeatureItem;

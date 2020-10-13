@@ -25,6 +25,32 @@ export const ButtonGroup = styled.button`
     
 `;
 
+export const PayButton = styled.button`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: ${pxToRem(280)};
+    height: ${pxToRem(50)};
+    border-radius: ${pxToRem(6)};
+    font-size: ${pxToRem(16)};
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        outline: 0;
+    }
+    ${props => props.sort === 'free' && `
+        color: #222;
+        border: 1px solid #222;
+        background: none;
+    `}
+    ${props => props.sort === 'pay' && `
+        color: ${Color.WHITE};
+        border: none;
+        background-color: #222;
+    `}
+`;
+
 export const Button = styled.button`
     position:relative;
     display:flex;
@@ -67,12 +93,12 @@ export const Button = styled.button`
         color: ${props.disabled ? '#fff' : '#fff'};
     `}
     ${props => props.sort === 'line' && `
-        background: #fff;
-        border: 1px solid #222;
+        border: 1px solid ${Color.TOPAZ};
         border-radius: 6px;    
-        color: ${props.disabled ? '#222222' : '#222222'};
+        color: ${Color.TOPAZ};
+        font-size:  ${pxToRem(16)};
+        font-weight: 500;
     `}
-    
     ${props => props.full && `
         width: 100%;
     `}
@@ -89,7 +115,7 @@ export const Button = styled.button`
         line-height: 1.18;
     `}
     ${props => props.size === 'large' && `
-        height: ${pxToRem(60)}      
+        width: ${pxToRem(320)};
+        height: ${pxToRem(50)}      
     `}
-    
 `;

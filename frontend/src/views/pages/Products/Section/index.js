@@ -5,7 +5,8 @@ import FeatureItem from "./FeatureItem";
 function Features(props) {
 
     const {
-        data
+        data,
+        onClick
     } = props;
 
     return (

@@ -1,5 +1,5 @@
-import {Images} from "../../../common/Images";
 import React from "react";
+import {Images} from "../../../common/Images";
 
 export const productsData = {
     caster: [

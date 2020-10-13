@@ -31,7 +31,7 @@ export const featureData = {
         {
             thumbnail: `BETTER EXPERIENCE`,
             title: `새로운 경험을\n시청자에게 전달`,
-            description: `퍼프 플레이는 스트리머와 시청자에게\n새로운 경험을 전달합니다.\n다양한 형식의 퍼프 플레이를 통해\n새로운 경험을 라이브 할 수 있습니다.` ,
+            description: `퍼프 플레이는 스트리머와 시청자에게\n새로운 경험을 전달합니다.\n다양한 형식의 퍼프 플레이를 통해\n새로운 경험을 라이브 할 수 있습니다.`,
         },
     ],
     cam: [
