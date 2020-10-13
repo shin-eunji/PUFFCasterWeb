@@ -13,7 +13,9 @@ import Member from "./Member";
 
 function Header (props) {
 
-    const {} = props;
+    const {
+        location
+    } = props;
 
     return (
         <Container>
@@ -21,7 +23,7 @@ function Header (props) {
                 <Logo onClick={() => navigate('/products/caster')}>puff</Logo>
 
                 <Gnb>
-                    <Nav/>
+                    <Nav location={location}/>
                     <Member/>
                 </Gnb>
 

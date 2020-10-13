@@ -7,7 +7,6 @@ import {featureData as FeatureData} from "../../components/Data/Feature";
 import Visual from "../../components/Visual";
 import Features from "./Section";
 import Service from "./Service";
-import Footer from "./Footer";
 
 function Chat (props) {
 
@@ -20,8 +19,6 @@ function Chat (props) {
             <Features data={FeatureData.chat}/>
 
             <Service data={ProductData.chat}/>
-
-            <Footer/>
         </Container>
     )
 }

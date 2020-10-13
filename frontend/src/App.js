@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Routes from "./Routes";
 import Header from "./views/components/Header";
+import Footer from "./views/pages/Products/Footer";
 
 
 
@@ -12,6 +13,7 @@ function App () {
         <Container>
             <Header/>
             <Routes/>
+            <Footer/>
         </Container>
     )
 }

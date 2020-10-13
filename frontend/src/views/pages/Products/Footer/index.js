@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import {withRouter} from "react-router-dom";
 
 import {info} from '../../../components/Data/Routes'
 import {ContentContainer} from "../../../../common/Layout/Components.Styled";
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {navigate} from "../../../../lib/History";
-import {Color} from "../../../../common/Color/Color.Styled";
 
 function Footer(props) {
 
@@ -94,4 +94,4 @@ const Copyright = styled.div`
     font-weight: 300;
 `;
 
-export default Footer;
+export default withRouter(Footer);
