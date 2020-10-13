@@ -12,8 +12,13 @@ import parttern1 from './main_parttern1.svg'
 import parttern2 from './main_parttern2.svg'
 import service_parttern1 from './visual_parttern1.svg'
 import service_parttern2 from './visual_parttern2.svg'
+import pricing_parttern from './bg_pricing_parttern.svg'
 
+import img_email from './img_email.png'
+import img_error from './img_error.svg'
 
+import price_check_check from './icons/pricing_icn_check.svg'
+import price_check_uncheck from './icons/pricing_icn_uncheck.svg'
 
 export const Images = {
     gnb_dropdown,
@@ -24,6 +29,7 @@ export const Images = {
     parttern2,
     service_parttern1,
     service_parttern2,
+    pricing_parttern,
 
     caster_youtube,
     caster_twitch,
@@ -32,5 +38,11 @@ export const Images = {
 
     apple_icn,
     download_icn,
+
+    img_email,
+    img_error,
+
+    price_check_check,
+    price_check_uncheck
 
 }

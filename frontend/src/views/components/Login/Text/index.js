@@ -25,6 +25,8 @@ function AuthText(props) {
 
 const Container = styled.div`
     margin-bottom: ${pxToRem(50)};
+    text-align:center;
+    white-space: pre-wrap;
 `
 const Title = styled.div`
     color: ${Color.WHITE};

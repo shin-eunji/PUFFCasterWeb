@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function User (props) {
+function More (props) {
 
     const {} = props;
 
     return (
         <Container>
-            User
+            More
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default User;
+export default More;

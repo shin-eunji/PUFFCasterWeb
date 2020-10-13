@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {navigate} from "../../../lib/History";
 
 import {productsData as ProductData} from "../../components/Data/Products";
 import {featureData as FeatureData} from "../../components/Data/Feature";

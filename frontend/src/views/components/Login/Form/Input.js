@@ -1,17 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Input} from "../../../../common/Input/Input.Styled";
+import {pxToRem} from "../../../../common/Text/Text.Styled";
 
-function Input (props) {
+function InputGroup(props) {
 
-    const {} = props;
+    const {
+        type,
+        name,
+        register,
+        placeholder,
+        errorType,
+    } = props;
 
     return (
-        <Container>
-            Input
+        <Container type={type}
+                   name={name}
+                   register={register}
+                   placeholder={placeholder}
+                   errorType={errorType}>
         </Container>
     )
 }
 
-const Container = styled.div`
+const Container = styled(Input)`
+    margin-bottom: ${pxToRem(20)};
 `
-export default Input;
+export default InputGroup;

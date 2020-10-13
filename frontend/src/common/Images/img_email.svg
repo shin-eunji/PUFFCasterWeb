@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__img_email" width="200" height="110" viewBox="0 0 200 110">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#4cc6c0"/>
+            <stop offset=".286" stop-color="#49c4be"/>
+            <stop offset="1" stop-color="#76ded9"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#02a59c"/>
+            <stop offset="1" stop-color="#0cb9b0"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-3" x1=".595" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0bbab2"/>
+            <stop offset="1" stop-color="#4cc6c0"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-4" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#cafcf9"/>
+            <stop offset="1" stop-color="#e3fffe"/>
+        </linearGradient>
+    </defs>
+    <path id="prefix__사각형_8512" d="M0 0h44a6 6 0 0 1 6 6v53a6 6 0 0 1-6 6H0V0z" data-name="사각형 8512" transform="translate(100 25)"/>
+    <path id="prefix__사각형_8515" d="M6 0h44v65H6a6 6 0 0 1-6-6V6a6 6 0 0 1 6-6z" data-name="사각형 8515" transform="translate(50 25)"/>
+    <path id="prefix__교차_1" d="M3094-2845a5.989 5.989 0 0 1-4.661-2.222l45.171-40.225a6 6 0 0 1 7.98 0l44.562 39.683A6 6 0 0 1 3182-2845z" data-name="교차 1" transform="translate(-3038 2935)"/>
+    <path id="prefix__교차_2" d="M3134.377-2852.9L3088.8-2896a6 6 0 0 1 5.2-3h88a6 6 0 0 1 5.519 3.641l-44.9 42.459a5.983 5.983 0 0 1-4.123 1.641 5.986 5.986 0 0 1-4.119-1.641z" data-name="교차 2" transform="translate(-3038 2924)" style="opacity:.1"/>
+    <path id="prefix__교차_3" d="M3134.51-2852.554l-45.607-40.613A6 6 0 0 1 3094-2896h88a6 6 0 0 1 5.425 3.433l-44.934 40.014a5.987 5.987 0 0 1-3.99 1.52 5.984 5.984 0 0 1-3.991-1.521z" data-name="교차 3" transform="translate(-3038 2921)"/>
+    <path id="prefix__패스_8033" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8033" transform="translate(9 66)" style="fill:#fccf22"/>
+    <path id="prefix__패스_8034" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8034" transform="translate(194 22)" style="fill:#01bdfd"/>
+    <path id="prefix__패스_8035" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8035" transform="translate(176 1)" style="fill:#fe4170"/>
+    <path id="prefix__패스_8036" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8036" transform="translate(19 98)" style="fill:#05b66b"/>
+    <path id="prefix__패스_8037" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8037" transform="translate(29 80)" style="fill:#7167ff"/>
+    <path id="prefix__패스_8038" d="M-1.778 0H6L3.778 7.778H-4z" data-name="패스 8038" transform="translate(171 50)" style="fill:#cced0c"/>
+    <path id="prefix__사각형_8523" d="M0 0H200V110H0z" data-name="사각형 8523" style="fill:none"/>
+</svg>
