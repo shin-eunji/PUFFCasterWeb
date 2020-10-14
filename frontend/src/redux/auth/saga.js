@@ -38,6 +38,20 @@ export default function*() {
                 });
         }),
 
+        takeLatest(Action.Types.USER, function* ({data}) {
+            console.log("data", data);
+            yield firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+                .then(res => {
+                    return firebase.auth().signInWithEmailAndPassword(data.email, data.password);
+                    console.log("[Saga User] res", res);
+                    navigate('/products/caster')
+                })
+                .catch(function (error) {
+                    console.log("error", error);
+                });
+
+        }),
+
         takeLatest(Action.Types.SIGN_OUT, function* ({data}) {
             console.log("[Saga Sign Out] data", data);
             yield firebase.auth().signOut()
