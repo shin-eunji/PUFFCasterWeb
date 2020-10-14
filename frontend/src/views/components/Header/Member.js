@@ -5,9 +5,7 @@ import {navigate} from "../../../lib/History";
 import {Button} from '../../../common/Button/Button.Styled';
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
-function Member (props) {
-
-    const {} = props;
+function Member () {
 
     return (
         <Container>

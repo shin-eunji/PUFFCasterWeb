@@ -1,12 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import cn from "classnames";
 import {ContentContainer} from "../../../../common/Layout/Components.Styled";
 
-function CamDetail(props) {
-
-    const {
-    } = props;
+function CamDetail() {
 
     return (
         <Container>

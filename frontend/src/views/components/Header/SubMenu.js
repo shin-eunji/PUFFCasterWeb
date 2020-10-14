@@ -3,7 +3,6 @@ import {useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
 import {navigate} from "../../../lib/History";
-import cn from 'classnames'
 
 import {Images} from "../../../common/Images";
 import {pxToRem} from "../../../common/Text/Text.Styled";
