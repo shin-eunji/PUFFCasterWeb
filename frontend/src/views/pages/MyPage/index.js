@@ -13,15 +13,8 @@ function MyPage(props) {
 
     const user = firebase.auth().currentUser;
 
-    if (user != null) {
-        user.providerData.forEach(function (profile) {
-            const id = profile.providerId
-            console.log("  Provider-specific UID: " + profile.uid);
-            console.log("  Name: " + profile.displayName);
-            console.log("  Email: " + profile.email);
-            console.log("  Photo URL: " + profile.photoURL);
-        });
-    }
+    const { email } = user || {}
+
 
     return (
         <Container>
@@ -30,8 +23,7 @@ function MyPage(props) {
                     <h3>프로필</h3>
                     <p>회원님의 프로필을 변경할 수있습니다.</p>
                 </Text>
-                <h3 id></h3>
-                <p></p>
+                <h3>{email}</h3>
             </SContentContainer>
         </Container>
     )
