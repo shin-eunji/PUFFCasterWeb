@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {navigate} from "../../../lib/History";
 
 import {productsData as ProductData} from "../../components/Data/Products";
 import {featureData as FeatureData} from "../../components/Data/Feature";
@@ -9,9 +8,7 @@ import Visual from "../../components/Visual";
 import Features from "./Section";
 import Service from "./Service";
 
-function Cam (props) {
-
-    const {} = props;
+function Cam () {
 
     return (
         <Container>

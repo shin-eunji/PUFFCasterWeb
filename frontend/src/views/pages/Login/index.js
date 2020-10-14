@@ -18,7 +18,7 @@ function Login() {
     const {register, errors, handleSubmit} = useForm()
 
     const onSubmit = data => {
-        authActions.signUp(data)
+        authActions.signIn(data)
         console.log("success");
     };
 

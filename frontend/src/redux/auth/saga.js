@@ -1,33 +1,33 @@
 import {all, takeLatest} from 'redux-saga/effects'
-import {Action} from "./redux";
+import {Action} from './redux'
 import firebase from '../../lib/Firebase'
 import {navigate} from "../../lib/History";
 
 
-export default function* () {
+export default function*() {
     yield all([
-        takeLatest(Action.Types.SIGNUP, function* ({data}) {
-            console.log("data", data);
-            firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+        takeLatest(Action.Types.SIGN_UP, function* ({data}) {
+            console.log("[Saga Sign Up] data", data);
+            yield firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
                 .then(res => {
-                    console.log("res", res);
-                    navigate('/')
+                    console.log("[Saga Sign Up] res", res);
+                    navigate('/products/caster')
                 })
                 .catch(function (error) {
                     console.log("error", error);
-                })
+                });
         }),
 
-        takeLatest(Action.Types.SIGNIN, function* ({data}) {
+        takeLatest(Action.Types.SIGN_IN, function* ({data}) {
             console.log("data", data);
-            firebase.auth().signInWithEmailAndPassword(data.email, data.password)
+            yield firebase.auth().signInWithEmailAndPassword(data.email, data.password)
                 .then(res => {
-                    console.log("res", res);
+                    console.log("res", res)
                     navigate('/')
                 })
                 .catch(function (error) {
                     console.log("error", error);
-                })
+                });
         })
     ])
 }

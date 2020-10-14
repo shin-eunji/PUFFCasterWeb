@@ -1,18 +1,19 @@
-import {createActions, createReducer} from "reduxsauce";
+import {createActions, createReducer} from 'reduxsauce'
 
 const initialState = {
-    openSidebar: false,
+
 }
 
 export const Action = createActions({
     updateState: ['state'],
-    signUp: ['data'],
+    sign: ['data'],
     signIn: ['data'],
-},{prefix: 'AUTH'})
+}, {prefix: 'AUTH'})
 
-export const reducer = createReducer(initialState, {
-    [Action.Types.UPDATE_STATE]: (state, {state: newState}) => ({
-        ...state,
-        ...newState
-    }),
+export const reducer = createReducer(initialState,{
+    [Action.Types.UPDATE_STATE]: (state, {state: newState}) =>
+        ({
+            ...state,
+            ...newState,
+        })
 })

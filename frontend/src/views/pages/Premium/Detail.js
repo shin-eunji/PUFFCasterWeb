@@ -4,10 +4,7 @@ import {priceDetails} from "../../components/Data/Premium";
 import Item from "./Item";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
-function Detail (props) {
-
-    const {
-    } = props;
+function Detail () {
 
     return (
         <Container>

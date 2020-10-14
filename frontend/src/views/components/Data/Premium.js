@@ -1,6 +1,4 @@
 import {Images} from "../../../common/Images";
-import price_check_check from "../../../common/Images/icons/pricing_icn_uncheck.svg";
-import price_check_uncheck from "../../../common/Images/icons/pricing_icn_check.svg";
 
 export const premiumData = {
     standard: [
