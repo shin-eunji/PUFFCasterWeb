@@ -12,7 +12,11 @@ import PasswordNew from "./views/pages/Login/user/PasswordNew";
 import PasswordReset from "./views/pages/Login/user/PasswordReset";
 import Email from "./views/pages/Login/user/Email";
 import Error from "./views/pages/Error/index";
-import CamDetail from "./views/pages/Products/Section/CamDetail";
+import CamDetail from "./views/components/Section/CamDetail";
+import MyPage from "./views/pages/MyPage";
+import Terms from "./views/pages/Help/Terms";
+import Policy from "./views/pages/Help/Policy";
+import Faq from "./views/pages/Help/Faq";
 
 function Routes (props) {
 
@@ -32,8 +36,13 @@ function Routes (props) {
 
                 <Route path={'/users/password/reset'} component={PasswordReset}/>
                 <Route path={'/email'} component={Email}/>
+                <Route path={'/mypage'} component={MyPage}/>
 
                 <Route path={'/error'} component={Error}/>
+
+                <Route path={'/terms'} component={Terms}/>
+                <Route path={'/policy'} component={Policy}/>
+                <Route path={'/faq'} component={Faq}/>
 
                 <Redirect from={'/'} to={'/products/caster'}/>
             </Switch>

@@ -4,7 +4,7 @@ import {Switch, Route} from 'react-router-dom';
 import Caster from "./Caster";
 import Chat from "./Chat";
 import Cam from "./Cam";
-import CamDetail from "./Section/CamDetail";
+import CamDetail from "../../components/Section/CamDetail";
 
 function Products (props) {
 

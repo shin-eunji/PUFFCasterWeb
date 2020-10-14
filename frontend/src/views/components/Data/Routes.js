@@ -59,14 +59,14 @@ export const dots = ['caster', 'chat', 'cam']
 export const info = [
     {
         name: '서비스이용약관',
-        to: '/',
+        to: '/terms',
     },
     {
         name: '개인정보처리방침',
-        to: '/',
+        to: '/policy',
     },
     {
         name: '도움말',
-        to: '/',
+        to: '/faq',
     },
 ]

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 
-import {ContentContainer} from "../../../../common/Layout/Components.Styled";
-import {Color} from "../../../../common/Color/Color.Styled";
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {navigate} from "../../../../lib/History";
+import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {Color} from "../../../common/Color/Color.Styled";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {navigate} from "../../../lib/History";
 
 function FeatureItem(props) {
 

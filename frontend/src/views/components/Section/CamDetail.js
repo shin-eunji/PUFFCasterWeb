@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ContentContainer} from "../../../../common/Layout/Components.Styled";
+import {ContentContainer} from "../../../common/Layout/Components.Styled";
 
 function CamDetail() {
 

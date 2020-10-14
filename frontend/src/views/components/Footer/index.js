@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import {withRouter} from "react-router-dom";
 
-import {info} from '../../../components/Data/Routes'
-import {ContentContainer} from "../../../../common/Layout/Components.Styled";
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {navigate} from "../../../../lib/History";
+import {info} from '../Data/Routes'
+import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {navigate} from "../../../lib/History";
 
 function Footer(props) {
 
@@ -71,7 +71,7 @@ const NavItem = styled.div`
     font-size: ${pxToRem(14)};
     font-weight: 300;
     margin: 0 ${pxToRem(10)};
-    
+    cursor: pointer;
     &::after {
         content: '';
         position: absolute;

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ContentContainer} from "../../../../common/Layout/Components.Styled";
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {Color} from "../../../../common/Color/Color.Styled";
-import {Button} from "../../../../common/Button/Button.Styled";
-import {Images} from "../../../../common/Images";
+import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {Color} from "../../../common/Color/Color.Styled";
+import {Button} from "../../../common/Button/Button.Styled";
+import {Images} from "../../../common/Images";
 
 function Item (props) {
 

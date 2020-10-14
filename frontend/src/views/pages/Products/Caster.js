@@ -5,8 +5,8 @@ import {productsData as ProductData} from "../../components/Data/Products";
 import {featureData as FeatureData} from "../../components/Data/Feature";
 
 import Visual from "../../components/Visual";
-import Features from "./Section";
-import Service from "./Service";
+import Features from "../../components/Section";
+import Service from "../../components/Service";
 
 function Caster(props) {
 

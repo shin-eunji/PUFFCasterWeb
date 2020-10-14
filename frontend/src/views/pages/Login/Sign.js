@@ -14,11 +14,9 @@ import InputGroup from "../../components/Login/Form/Input";
 
 function Sign() {
 
-    const {register, errors, handleSubmit} = useForm()
+    const { register, handleSubmit, setValue } = useForm();
 
-    const onSubmit = data => {
-        authActions.signUp(data)
-    };
+    const onSubmit = data => authActions.signUp(data);
 
     return (
         <Container>
@@ -26,42 +24,33 @@ function Sign() {
                 <AuthText data={PageTitle.sign}/>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <InputGroup type="text"
+
+                <InputGroup type="text"
                                 name="email"
-                                register={register({required: true})}
                                 placeholder='이메일을 입력하세요'
-                                errorType={errors?.email?.type}
+                                register={register({required: true})}
                     />
-                    {errors.email && "필수 입력 사항입니다."}
 
                     <InputGroup type={"text"}
                                 name={"nickname"}
                                 register={register}
                                 placeholder={'닉네임 입력하세요'}
-                                errorType={errors?.nickname?.type}
                     />
-                    {errors.nickname && "필수 입력 사항입니다."}
 
                     <InputGroup type="password"
                                 name="password"
                                 register={register({required: true})}
                                 placeholder='비밀번호를 입력하세요'
-                                errorType={errors?.password?.type}
                     />
-                    {errors.password && "필수 입력 사항입니다."}
 
                     <InputGroup type={"password"}
                                 name={"passwordRe"}
                                 register={register}
                                 placeholder={'비밀번호를 재입력해주세요'}
-                                errorType={errors?.passwordRe?.type}
                     />
-                    {errors.passwordRe && "필수 입력 사항입니다."}
-
 
                     <LoginButton sort={'caster'}
                                  size={'large'}
-                                 type="submit"
                     >가입하기</LoginButton>
 
                 </form>

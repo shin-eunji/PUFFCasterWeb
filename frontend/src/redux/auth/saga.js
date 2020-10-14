@@ -22,12 +22,32 @@ export default function*() {
             console.log("data", data);
             yield firebase.auth().signInWithEmailAndPassword(data.email, data.password)
                 .then(res => {
-                    console.log("res", res)
+                    firebase.auth().onAuthStateChanged ((user) => {
+                        if(user) {
+                            console.log("[Saga Sign In] user", data);
+                            navigate('/mypage')
+                        } else {
+                            console.log("error");
+                            navigate('/error/type1')
+                        }
+                    })
                     navigate('/')
                 })
                 .catch(function (error) {
                     console.log("error", error);
                 });
-        })
+        }),
+
+        takeLatest(Action.Types.SIGN_OUT, function* ({data}) {
+            console.log("[Saga Sign Out] data", data);
+            yield firebase.auth().signOut()
+                .then(res => {
+                    console.log("[Saga Sign Out] res", res);
+                    navigate('/products/caster')
+                })
+                .catch(function (error) {
+                    console.log("error", error);
+                });
+        }),
     ])
 }

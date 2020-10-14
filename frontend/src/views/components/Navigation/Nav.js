@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames'
-import {navigate} from "../../../../lib/History";
+import {navigate} from "../../../lib/History";
 
-import {Color} from "../../../../common/Color/Color.Styled";
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {SubRoutes} from "../../../components/Data/Routes";
+import {Color} from "../../../common/Color/Color.Styled";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {SubRoutes} from "../Data/Routes";
 
 function Nav(props) {
 

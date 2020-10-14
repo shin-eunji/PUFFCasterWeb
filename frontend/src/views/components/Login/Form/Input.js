@@ -16,6 +16,7 @@ function InputGroup(props) {
     return (
         <Container type={type}
                    name={name}
+                   ref={register}
                    register={register}
                    placeholder={placeholder}
                    errorType={errorType}>

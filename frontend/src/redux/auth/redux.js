@@ -6,9 +6,11 @@ const initialState = {
 
 export const Action = createActions({
     updateState: ['state'],
-    sign: ['data'],
+    signUp: ['data'],
     signIn: ['data'],
-}, {prefix: 'AUTH'})
+    signOut: ['data'],
+    user: ['data'],
+})
 
 export const reducer = createReducer(initialState,{
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) =>
