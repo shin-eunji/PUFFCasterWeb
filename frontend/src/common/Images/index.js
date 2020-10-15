@@ -1,4 +1,5 @@
 import gnb_dropdown from './icons/gnb_dropdown_open.svg'
+import gnb_dropdown_open from './icons/gnb_dropdown_open.svg'
 import caster_youtube from './icons/top_icn_youtube.svg'
 import caster_twitch from './icons/top_icn_twitch.svg'
 import caster_facebook from './icons/top_icn_facebook.svg'
@@ -19,9 +20,11 @@ import img_error from './img_error.svg'
 
 import price_check_check from './icons/pricing_icn_check.svg'
 import price_check_uncheck from './icons/pricing_icn_uncheck.svg'
+import info from './icons/35.png'
 
 export const Images = {
     gnb_dropdown,
+    gnb_dropdown_open,
 
     visual_caster,
     visual_chat,
@@ -43,6 +46,7 @@ export const Images = {
     img_error,
 
     price_check_check,
-    price_check_uncheck
+    price_check_uncheck,
+    info
 
 }

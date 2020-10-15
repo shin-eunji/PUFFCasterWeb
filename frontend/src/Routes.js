@@ -12,7 +12,6 @@ import PasswordNew from "./views/pages/Login/user/PasswordNew";
 import PasswordReset from "./views/pages/Login/user/PasswordReset";
 import Email from "./views/pages/Login/user/Email";
 import Error from "./views/pages/Error/index";
-import CamDetail from "./views/components/Section/CamDetail";
 import MyPage from "./views/pages/MyPage";
 import Terms from "./views/pages/Help/Terms";
 import Policy from "./views/pages/Help/Policy";

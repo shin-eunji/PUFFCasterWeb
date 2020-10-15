@@ -1,41 +1,54 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import {authActions} from "../../../redux/actionCreators";
-import firebase from "../../../lib/Firebase";
 import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import Profile from "./Profile";
+import Price from "./Price";
+import Setting from "./Setting";
 import {pxToRem} from "../../../common/Text/Text.Styled";
-import {Color} from "../../../common/Color/Color.Styled";
 
 function MyPage(props) {
 
     const {} = props;
 
-
-    const user = firebase.auth().currentUser;
-
-    const { email } = user || {}
-
-
     return (
         <Container>
             <SContentContainer>
-                <Text>
-                    <h3>프로필</h3>
-                    <p>회원님의 프로필을 변경할 수있습니다.</p>
-                </Text>
-                <h3>{email}</h3>
+                <Profile/>
+                <Price/>
+                <Setting/>
+                <SignButton>
+                    <Text>로그아웃</Text>
+                    <Text>회원탈퇴</Text>
+
+                </SignButton>
             </SContentContainer>
         </Container>
     )
 }
 
 const Container = styled.div`
-    background: ${Color.WHITE};
+    padding-top: ${pxToRem(80)};
+    padding-bottom: ${pxToRem(150)};
 `
 const SContentContainer = styled(ContentContainer)`
-    padding: ${pxToRem(80)} 0 ${pxToRem(150)};    
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
 `;
-const Text = styled.div`
-    
+const SignButton = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: ${pxToRem(440)};
+    margin-top: ${pxToRem(100)};
+`;
+const Text = styled.button`
+    border: none;
+    background: none;
+    color: #222;
+    font-size: ${pxToRem(16)};
+    font-weight: 500;
+    margin-bottom: ${pxToRem(10)};
+    cursor: pointer;
 `;
 export default MyPage;

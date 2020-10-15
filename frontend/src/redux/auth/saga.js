@@ -40,15 +40,15 @@ export default function*() {
 
         takeLatest(Action.Types.USER, function* ({data}) {
             console.log("data", data);
-            yield firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-                .then(res => {
-                    return firebase.auth().signInWithEmailAndPassword(data.email, data.password);
-                    console.log("[Saga User] res", res);
-                    navigate('/products/caster')
-                })
-                .catch(function (error) {
-                    console.log("error", error);
-                });
+            yield firebase.auth().onAuthStateChanged ((user) => {
+                if(user) {
+                    console.log("[Saga Sign In] user", data);
+                    navigate('/mypage')
+                } else {
+                    console.log("error");
+                    navigate('/error/type1')
+                }
+            })
 
         }),
 
