@@ -48,3 +48,33 @@ export const PageTitle = {
         }
     ],
 }
+
+
+export const content = {
+    profile: [
+        {
+            title: `프로필`,
+            description: `회원님의 프로필을 변경할 수있습니다.`,
+        },
+        {
+            title: `프로필`,
+            description: `회원님의 프로필을 변경할 수있습니다.`,
+        }
+
+    ],
+    price: [
+        {
+            name: `price`,
+            title: `결제`,
+            description: `보유한 프리미엄 상품을 확인 할 수 있습니다.`,
+        }
+    ],
+    setting: [
+        {
+            name: `setting`,
+            title: `환경 설정`,
+            description: `계정의 각종 환경 설정을 할 수 있습니다.`,
+
+        }
+    ],
+}
