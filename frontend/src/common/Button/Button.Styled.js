@@ -6,7 +6,6 @@ export const ButtonGroup = styled.div`
     position:relative;
     display:flex;
     align-items:center;
-    height: ${pxToRem(120)};
     justify-content:center;
     > * {
           margin: 0 ${pxToRem(5)};
@@ -92,7 +91,7 @@ export const Button = styled.button`
     ${props => props.sort === 'dark' && `
         background: ${Color.DARK};
         border-radius: 6px;
-        color: ${props.disabled ? '#fff' : '#fff'};
+        color: #fff;
     `}
     ${props => props.sort === 'line' && `
         border: 1px solid ${Color.TOPAZ};
@@ -100,6 +99,14 @@ export const Button = styled.button`
         color: ${Color.TOPAZ};
         font-size:  ${pxToRem(16)};
         font-weight: 500;
+    `}
+    ${props => props.sort === 'lineDark' && `
+        border: 1px solid #444;
+        border-radius: 6px;    
+        color: #444;
+        font-size:  ${pxToRem(16)};
+        font-weight: 500;
+        background: #fff;
     `}
     ${props => props.full && `
         width: 100%;

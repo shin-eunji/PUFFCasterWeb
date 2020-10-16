@@ -5,7 +5,7 @@ import {Color} from "../../../../common/Color/Color.Styled";
 import {Images} from "../../../../common/Images";
 import {useSelector} from "react-redux";
 import {profileActions} from "../../../../redux/actionCreators";
-import PlanPopup from "./PlanPopup";
+import PlanPopup from "../../../components/Popup/PlanPopup";
 
 function PriceContents (props) {
 

@@ -7,7 +7,7 @@ import Setting from "./Setting";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {useSelector} from "react-redux";
 import {profileActions} from "../../../redux/actionCreators";
-import ProfilePopup from "./Contents/ProfilePopup";
+import ProfilePopup from "../../components/Popup/ProfilePopup";
 
 function MyPage(props) {
 

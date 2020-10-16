@@ -2,7 +2,9 @@ import {createActions, createReducer} from "reduxsauce";
 
 const initialState = {
     popupProfile: false,
+    popupImage: false,
     popupPlan: false,
+    popupNickname: false,
 }
 
 export const Action = createActions({

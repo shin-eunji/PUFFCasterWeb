@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {profileActions} from "../../../../redux/actionCreators";
-import {Button, ButtonGroup} from "../../../../common/Button/Button.Styled";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {profileActions} from "../../../redux/actionCreators";
+import {Button, ButtonGroup} from "../../../common/Button/Button.Styled";
 
-function ProfilePopup(props) {
+function PhotoPopup(props) {
 
     const {
 
@@ -19,15 +19,15 @@ function ProfilePopup(props) {
             <Profile>
                 <Text>프로필 이미지 편집</Text>
                 <Image></Image>
-                <ButtonGroup>
-                    <PopupButton sort={'line'}
+                <PhotoButtonGroup>
+                    <PhotoButton sort={'line'}
                                  size={'small'}
                                  onClick={handleClose}
-                    >취소</PopupButton>
-                    <PopupButton sort={'line'}
+                    >취소</PhotoButton>
+                    <PhotoButton sort={'line'}
                                  size={'small'}
-                    >확인</PopupButton>
-                </ButtonGroup>
+                    >확인</PhotoButton>
+                </PhotoButtonGroup>
             </Profile>
         </Container>
     )
@@ -64,8 +64,11 @@ const Image = styled.div`
     flex: 1;
     background: #000;
 `;
-const PopupButton = styled(Button)`
+const PhotoButton = styled(Button)`
      width: ${pxToRem(150)};
      height: ${pxToRem(50)};
 `;
-export default ProfilePopup;
+const PhotoButtonGroup = styled(ButtonGroup)`
+    margin: ${pxToRem(34)} 0;
+`;
+export default PhotoPopup;

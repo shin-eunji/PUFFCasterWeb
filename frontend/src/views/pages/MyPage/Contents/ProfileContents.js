@@ -4,9 +4,10 @@ import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Images} from "../../../../common/Images";
 import firebase from '../../../../lib/Firebase'
 import {Color} from "../../../../common/Color/Color.Styled";
-import ProfilePopup from "./ProfilePopup";
+import ProfilePopup from "../../../components/Popup/ProfilePopup";
 import {useSelector} from "react-redux";
 import {profileActions} from "../../../../redux/actionCreators";
+import NicknamePopup from "../../../components/Popup/NicknamePopup";
 
 function ProfileContents (props) {
 
@@ -17,23 +18,30 @@ function ProfileContents (props) {
     const { email, nickname } = user || {}
 
 
-    const {popupProfile}  = useSelector(state => state.profile)
+    const {popupProfile, popupNickname}  = useSelector(state => state.profile)
 
-    const handlePopup = () => {
+    const onProfile = () => {
         profileActions.updateState({popupProfile: true})
+    }
+
+    const onNickname = () => {
+        profileActions.updateState({popupNickname: true})
     }
 
     return (
         <Container>
-            <ProfilePhoto onClick={handlePopup}>
-            </ProfilePhoto>
+            <ProfilePhoto onClick={onProfile}/>
             {
                 popupProfile &&
-                <ProfilePopup popupProfile={handlePopup}/>
+                <ProfilePopup popupProfile={onProfile}/>
             }
             <Item>
                 <Title className={'nickname'}>닉네임{nickname}</Title>
-                <ChangeButton>닉네임 변경</ChangeButton>
+                <ChangeButton onClick={onNickname}>닉네임 변경</ChangeButton>
+                {
+                    popupNickname &&
+                        <NicknamePopup popupNickname={onNickname}/>
+                }
             </Item>
 
             <Item>

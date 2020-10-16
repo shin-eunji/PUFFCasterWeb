@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {profileActions} from "../../../../redux/actionCreators";
-import {pxToRem} from "../../../../common/Text/Text.Styled";
-import {Button, ButtonGroup} from "../../../../common/Button/Button.Styled";
-import {Color} from "../../../../common/Color/Color.Styled";
-import {navigate} from "../../../../lib/History";
+import {profileActions} from "../../../redux/actionCreators";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {Button, ButtonGroup} from "../../../common/Button/Button.Styled";
+import {Color} from "../../../common/Color/Color.Styled";
+import {navigate} from "../../../lib/History";
 
 function PlanPopup(props) {
 

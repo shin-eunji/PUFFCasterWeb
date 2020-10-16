@@ -6,7 +6,7 @@ import Header from "./views/components/Header";
 import Footer from "./views/components/Footer";
 import {authActions} from "./redux/actionCreators";
 import {useSelector} from "react-redux";
-import ProfilePopup from "./views/pages/MyPage/Contents/ProfilePopup";
+import ProfilePopup from "./views/components/Popup/ProfilePopup";
 
 
 
