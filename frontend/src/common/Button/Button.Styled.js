@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import {pxToRem} from "../Text/Text.Styled";
 import {Color} from "../Color/Color.Styled";
 
-export const ButtonGroup = styled.button`
+export const ButtonGroup = styled.div`
     position:relative;
     display:flex;
+    align-items:center;
+    height: ${pxToRem(120)};
     justify-content:center;
     > * {
           margin: 0 ${pxToRem(5)};
@@ -105,6 +107,12 @@ export const Button = styled.button`
     ${props => props.size === 'small' && `
         width: ${pxToRem(90)};   
         height: ${pxToRem(40)};
+        font-size: ${pxToRem(16)};
+        line-height: 1.18;  
+    `}
+    ${props => props.size === 'smallMedium' && `
+        width: ${pxToRem(150)};   
+        height: ${pxToRem(50)};
         font-size: ${pxToRem(16)};
         line-height: 1.18;  
     `}

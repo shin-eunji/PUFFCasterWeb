@@ -46,6 +46,7 @@ const NavItem = styled.div`
     height: 100%;
     z-index: 1;
     opacity: .4;
+    cursor: pointer;
     &.isActive {
         opacity: 1;
         &::after {

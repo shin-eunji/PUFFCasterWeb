@@ -5,10 +5,14 @@ import Profile from "./Profile";
 import Price from "./Price";
 import Setting from "./Setting";
 import {pxToRem} from "../../../common/Text/Text.Styled";
+import {useSelector} from "react-redux";
+import {profileActions} from "../../../redux/actionCreators";
+import ProfilePopup from "./Contents/ProfilePopup";
 
 function MyPage(props) {
 
-    const {} = props;
+    const {
+    } = props;
 
     return (
         <Container>
@@ -22,6 +26,7 @@ function MyPage(props) {
 
                 </SignButton>
             </SContentContainer>
+
         </Container>
     )
 }

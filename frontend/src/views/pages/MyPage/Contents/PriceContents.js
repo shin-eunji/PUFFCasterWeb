@@ -3,20 +3,33 @@ import styled from 'styled-components';
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Color} from "../../../../common/Color/Color.Styled";
 import {Images} from "../../../../common/Images";
+import {useSelector} from "react-redux";
+import {profileActions} from "../../../../redux/actionCreators";
+import PlanPopup from "./PlanPopup";
 
 function PriceContents (props) {
 
     const {} = props;
 
+    const { popupPlan } = useSelector(state => state.profile)
+
+    const handlePlanPopup = () => {
+        profileActions.updateState({popupPlan: true})
+    }
+
     return (
         <Container>
             <Item>
                 <Title>보유 플랜</Title>
-                <PlanContent>
+                <PlanContent onClick={handlePlanPopup}>
                     <Box sort={'standard'}></Box>
                     <Text>PUFF CASTER PRO</Text>
                     <Info/>
                 </PlanContent>
+                {
+                    popupPlan &&
+                        <PlanPopup popupPlan={handlePlanPopup}/>
+                }
             </Item>
         </Container>
     )

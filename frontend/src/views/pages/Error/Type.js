@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Images} from "../../../common/Images";
 import {PageTitle} from "../../components/Data/Title";
-import AuthText from "../../components/Login/Text";
+import AuthText from "../../components/Login/Title";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
 function Type (props) {

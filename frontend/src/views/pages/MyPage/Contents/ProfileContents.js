@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Images} from "../../../../common/Images";
 import firebase from '../../../../lib/Firebase'
 import {Color} from "../../../../common/Color/Color.Styled";
+import ProfilePopup from "./ProfilePopup";
+import {useSelector} from "react-redux";
+import {profileActions} from "../../../../redux/actionCreators";
 
 function ProfileContents (props) {
 
@@ -11,11 +14,23 @@ function ProfileContents (props) {
     } = props;
 
     const user = firebase.auth().currentUser;
-
     const { email, nickname } = user || {}
+
+
+    const {popupProfile}  = useSelector(state => state.profile)
+
+    const handlePopup = () => {
+        profileActions.updateState({popupProfile: true})
+    }
 
     return (
         <Container>
+            <ProfilePhoto onClick={handlePopup}>
+            </ProfilePhoto>
+            {
+                popupProfile &&
+                <ProfilePopup popupProfile={handlePopup}/>
+            }
             <Item>
                 <Title className={'nickname'}>닉네임{nickname}</Title>
                 <ChangeButton>닉네임 변경</ChangeButton>
@@ -39,6 +54,27 @@ const Container = styled.div`
     flex-direction:column;
     justify-content:flex-start;
 `
+const ProfilePhoto = styled.div`
+    position:relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: ${pxToRem(110)};
+    height: ${pxToRem(110)};
+    background: url(${Images.profile_img});
+    margin-top: ${pxToRem(30)};
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: ${pxToRem(6)};
+        right: ${pxToRem(6)};
+        width: ${pxToRem(24)};
+        height: ${pxToRem(24)};
+        background: url(${Images.profile_edit});
+    }
+`;
 const Item = styled.div`
     display:flex;
     align-items:center;

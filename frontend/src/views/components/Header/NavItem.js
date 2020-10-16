@@ -30,7 +30,9 @@ function NavItem(props) {
 
     return (
         <Container className={cn('NavItem', {isActive})}>
-            <ItemName onClick={handleMenu}>
+            <ItemName onClick={handleMenu}
+                      isActive={location.pathname === to}
+            >
                 {name}
                 {
                     subRoutes &&
@@ -62,9 +64,9 @@ const ItemName = styled.div`
     font-size: ${pxToRem(14)};
     font-weight: 400;
     opacity: .6;
-    .isActive & {
+    ${props => props.isActive &&`
         opacity: 1;
-    }
+    `}
     img {
         margin-left: ${pxToRem(10)};
     }

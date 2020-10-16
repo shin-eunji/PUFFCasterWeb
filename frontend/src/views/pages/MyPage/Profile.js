@@ -5,14 +5,15 @@ import ProfileContents from "./Contents/ProfileContents";
 
 function Profile(props) {
 
-    const {} = props;
+    const {
+    } = props;
 
     return (
         <Container>
             <Title title={'프로필'}
                    description={'회원님의 프로필을 변경할 수있습니다.'}
             />
-            <ProfileContents />
+            <ProfileContents/>
         </Container>
     )
 }

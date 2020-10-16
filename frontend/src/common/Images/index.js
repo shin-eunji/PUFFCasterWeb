@@ -1,4 +1,4 @@
-import gnb_dropdown from './icons/gnb_dropdown_open.svg'
+import gnb_dropdown from './icons/gnb_dropdown.svg'
 import gnb_dropdown_open from './icons/gnb_dropdown_open.svg'
 import caster_youtube from './icons/top_icn_youtube.svg'
 import caster_twitch from './icons/top_icn_twitch.svg'
@@ -16,11 +16,16 @@ import service_parttern2 from './visual_parttern2.svg'
 import pricing_parttern from './bg_pricing_parttern.svg'
 
 import img_email from './img_email.png'
+import img_pricing from './img_pricing.png'
 import img_error from './img_error.svg'
 
 import price_check_check from './icons/pricing_icn_check.svg'
 import price_check_uncheck from './icons/pricing_icn_uncheck.svg'
 import info from './icons/35.png'
+import profile_img from './profile_thumbnail_img_110.svg'
+import profile_edit from './profile_thumbnail_edit.svg'
+
+
 
 export const Images = {
     gnb_dropdown,
@@ -44,9 +49,13 @@ export const Images = {
 
     img_email,
     img_error,
+    img_pricing,
 
     price_check_check,
     price_check_uncheck,
-    info
+    info,
+
+    profile_img,
+    profile_edit,
 
 }

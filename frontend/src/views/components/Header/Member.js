@@ -24,9 +24,9 @@ function Member() {
 
             {/*{*/}
             {/*    user ?*/}
-            {/*    (<Text>*/}
+            {/*    (<Title>*/}
             {/*        <Name>{user}</Name>*/}
-            {/*    </Text>)*/}
+            {/*    </Title>)*/}
             {/*         :*/}
             {/*    (<LoginButton sort={'lime'}*/}
             {/*                 size={'small'}*/}

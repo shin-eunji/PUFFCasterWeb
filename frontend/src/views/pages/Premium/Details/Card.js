@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {pxToRem} from "../../../common/Text/Text.Styled";
-import {Color} from "../../../common/Color/Color.Styled";
-import {PayButton} from "../../../common/Button/Button.Styled";
+import {pxToRem} from "../../../../common/Text/Text.Styled";
+import {Color} from "../../../../common/Color/Color.Styled";
+import {PayButton} from "../../../../common/Button/Button.Styled";
 import Detail from "./Detail";
+import {navigate} from "../../../../lib/History";
 
 function Card(props) {
 
@@ -25,7 +26,9 @@ function Card(props) {
                 <Thumbnail>{thumbnail}</Thumbnail>
                 <Detail/>
             </Text>
-            <Button sort={sort}>{pay}</Button>
+            <Button sort={sort}
+                    onClick={() => navigate('/premium/pay')}
+            >{pay}</Button>
         </Container>
     )
 }

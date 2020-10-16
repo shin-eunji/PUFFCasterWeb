@@ -4,7 +4,7 @@ import {useForm} from "react-hook-form";
 
 
 import {PageTitle} from "../../components/Data/Title";
-import AuthText from "../../components/Login/Text";
+import AuthText from "../../components/Login/Title";
 import InputGroup from "../../components/Login/Form/Input";
 
 import {Button} from "../../../common/Button/Button.Styled";

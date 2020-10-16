@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {dots} from "../../components/Data/Routes";
+import {dots} from "../Data/Routes";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
@@ -47,6 +47,7 @@ const Dot = styled.div`
     margin: 0 ${pxToRem(4)};
     border-radius: ${pxToRem(8)};
     opacity: .4;
+    cursor: pointer;
     ${props => props.isActive && `
         opacity: 1;    
     `}
