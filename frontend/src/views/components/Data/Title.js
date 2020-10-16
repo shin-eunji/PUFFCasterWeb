@@ -41,6 +41,18 @@ export const PageTitle = {
             description: `PUFF CASTER의 프리미엄 플랜 구매가 가능합니다.\nPUFF CASTER의 다양하고 특별한 기능들을 사용하시려면 플랜을 구매해주세요!`,
         }
     ],
+    premiumDetail: [
+        {
+            title: `프리미엄 플랜`,
+            description: `PUFF CASTER 기능을 상세하게 볼 수 있습니다~`,
+        }
+    ],
+    successPay: [
+        {
+            title: `구매해주셔서 감사합니다`,
+            description: `결제가 완료되었습니다.`,
+        }
+    ],
     errorPay: [
         {
             title: `결제에 실패하였습니다`,

@@ -16,6 +16,8 @@ import MyPage from "./views/pages/MyPage";
 import Terms from "./views/pages/Help/Terms";
 import Policy from "./views/pages/Help/Policy";
 import Faq from "./views/pages/Help/Faq";
+import PlanDetails from "./views/pages/Premium/PlanDetails";
+import Pay from "./views/pages/Premium/Pay";
 
 function Routes (props) {
 
@@ -25,7 +27,9 @@ function Routes (props) {
         <Container>
             <Switch>
                 <Route path={'/products'} component={Products} />
-                <Route path={'/premium'} component={Premium} />
+                <Route exact path={'/premium'} component={Premium} />
+                <Route path={'/premium/detail'} component={PlanDetails} />
+                <Route path={'/premium/pay'} component={Pay} />
                 <Route path={'/more'} component={More} />
 
                 <Route path={'/login'} component={Login} />
@@ -44,6 +48,7 @@ function Routes (props) {
                 <Route path={'/faq'} component={Faq}/>
 
                 <Redirect from={'/'} to={'/products/caster'}/>
+                <Redirect from={'/premium'} to={'/premium/plan'}/>
             </Switch>
         </Container>
     )

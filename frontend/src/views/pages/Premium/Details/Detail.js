@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {priceDetails} from "../../components/Data/Premium";
+import {priceDetails} from "../../../components/Data/Premium";
 import Item from "./Item";
-import {pxToRem} from "../../../common/Text/Text.Styled";
+import {pxToRem} from "../../../../common/Text/Text.Styled";
 
 function Detail () {
 

@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function CamDetail (props) {
+function index (props) {
 
     const {} = props;
 
     return (
         <Container>
-            CamDetail
+            index
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default CamDetail;
+export default index;

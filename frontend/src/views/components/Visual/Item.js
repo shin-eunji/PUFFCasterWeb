@@ -8,7 +8,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 
 import Nav from "../Navigation/Nav";
-import Dots from "../../pages/Products/Dots";
+import Dots from "./Dots";
 
 function Item (props) {
 

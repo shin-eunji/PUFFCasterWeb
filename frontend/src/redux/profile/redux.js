@@ -1,12 +1,15 @@
 import {createActions, createReducer} from "reduxsauce";
 
 const initialState = {
-    openSidebar: false,
+    popupProfile: false,
+    popupImage: false,
+    popupPlan: false,
+    popupNickname: false,
 }
 
 export const Action = createActions({
     updateState: ['state'],
-}, {prefix: 'app'})
+}, {prefix: 'profile'})
 
 export const reducer = createReducer(initialState, {
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) => ({

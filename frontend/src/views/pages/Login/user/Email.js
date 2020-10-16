@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {LoginContainer, SContainer} from "../../../../common/Layout/Components.Styled";
 import {PageTitle} from "../../../components/Data/Title";
-import AuthText from "../../../components/Login/Text";
+import AuthText from "../../../components/Login/Title";
 import {Images} from "../../../../common/Images";
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Button} from "../../../../common/Button/Button.Styled";

@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import {pxToRem} from "../Text/Text.Styled";
 import {Color} from "../Color/Color.Styled";
 
-export const ButtonGroup = styled.button`
+export const ButtonGroup = styled.div`
     position:relative;
     display:flex;
+    align-items:center;
     justify-content:center;
     > * {
           margin: 0 ${pxToRem(5)};
@@ -90,7 +91,7 @@ export const Button = styled.button`
     ${props => props.sort === 'dark' && `
         background: ${Color.DARK};
         border-radius: 6px;
-        color: ${props.disabled ? '#fff' : '#fff'};
+        color: #fff;
     `}
     ${props => props.sort === 'line' && `
         border: 1px solid ${Color.TOPAZ};
@@ -99,12 +100,26 @@ export const Button = styled.button`
         font-size:  ${pxToRem(16)};
         font-weight: 500;
     `}
+    ${props => props.sort === 'lineDark' && `
+        border: 1px solid #444;
+        border-radius: 6px;    
+        color: #444;
+        font-size:  ${pxToRem(16)};
+        font-weight: 500;
+        background: #fff;
+    `}
     ${props => props.full && `
         width: 100%;
     `}
     ${props => props.size === 'small' && `
         width: ${pxToRem(90)};   
         height: ${pxToRem(40)};
+        font-size: ${pxToRem(16)};
+        line-height: 1.18;  
+    `}
+    ${props => props.size === 'smallMedium' && `
+        width: ${pxToRem(150)};   
+        height: ${pxToRem(50)};
         font-size: ${pxToRem(16)};
         line-height: 1.18;  
     `}

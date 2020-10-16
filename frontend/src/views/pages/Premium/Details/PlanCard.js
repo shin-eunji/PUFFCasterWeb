@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from "./Card";
-import {Color} from "../../../common/Color/Color.Styled";
-import {pxToRem} from "../../../common/Text/Text.Styled";
+import {Color} from "../../../../common/Color/Color.Styled";
+import {pxToRem} from "../../../../common/Text/Text.Styled";
 
 function PlanCard (props) {
 

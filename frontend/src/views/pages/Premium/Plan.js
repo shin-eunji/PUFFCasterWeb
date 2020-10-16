@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import {LoginContainer} from "../../../common/Layout/Components.Styled";
-import {PageTitle} from "../../components/Data/Title";
-import {premiumData} from "../../components/Data/Premium";
-
-import PlanCard from "./Details/PlanCard";
 import Title from "../../components/Login/Title";
-import {pxToRem} from "../../../common/Text/Text.Styled";
-import {Color} from "../../../common/Color/Color.Styled";
-import {Images} from "../../../common/Images";
+import {PageTitle} from "../../components/Data/Title";
+import PlanCard from "./Details/PlanCard";
+import {premiumData} from "../../components/Data/Premium";
 import {navigate} from "../../../lib/History";
+import {pxToRem} from "../../../common/Text/Text.Styled";
+import {Images} from "../../../common/Images";
+import {LoginContainer} from "../../../common/Layout/Components.Styled";
+import {Color} from "../../../common/Color/Color.Styled";
 
-function Premium(props) {
+function Plan (props) {
 
     const {} = props;
 
@@ -25,12 +23,12 @@ function Premium(props) {
                     <PlanCard data={premiumData.professional}/>
                     <PlanCard data={premiumData.enterprise}/>
                 </PlanContainer>
-                <PlanDetail onClick={() => navigate('/premium/detail')}
-                >플랜 상세 보기</PlanDetail>
+                <PlanDetail onClick={() => navigate('/premium/detail')}>플랜 상세 보기</PlanDetail>
             </SContentContainer>
         </Container>
     )
 }
+
 
 const Container = styled.div`
      
@@ -68,4 +66,4 @@ const PlanDetail = styled.button`
       font-size: ${pxToRem(16)};
       font-weight: 300;
 `;
-export default Premium;
+export default Plan;

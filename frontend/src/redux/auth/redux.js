@@ -13,7 +13,7 @@ export const Action = createActions({
     signOut: ['data'],
     user: ['data'],
     loaderData: [false]
-})
+}, {prefix: 'auth'})
 
 export const reducer = createReducer(initialState, {
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) =>

@@ -4,7 +4,7 @@ import {useForm} from "react-hook-form";
 import {navigate} from "../../../../lib/History";
 
 import {LoginContainer, SContainer} from "../../../../common/Layout/Components.Styled";
-import AuthText from "../../../components/Login/Text";
+import AuthText from "../../../components/Login/Title";
 import {PageTitle} from "../../../components/Data/Title";
 import InputGroup from "../../../components/Login/Form/Input";
 import {authActions} from "../../../../redux/actionCreators";

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Images} from "../../../../common/Images";
 import firebase from '../../../../lib/Firebase'
 import {Color} from "../../../../common/Color/Color.Styled";
+import ProfilePopup from "../../../components/Popup/ProfilePopup";
+import {useSelector} from "react-redux";
+import {profileActions} from "../../../../redux/actionCreators";
+import NicknamePopup from "../../../components/Popup/NicknamePopup";
 
 function ProfileContents (props) {
 
@@ -11,14 +15,33 @@ function ProfileContents (props) {
     } = props;
 
     const user = firebase.auth().currentUser;
-
     const { email, nickname } = user || {}
+
+
+    const {popupProfile, popupNickname}  = useSelector(state => state.profile)
+
+    const onProfile = () => {
+        profileActions.updateState({popupProfile: true})
+    }
+
+    const onNickname = () => {
+        profileActions.updateState({popupNickname: true})
+    }
 
     return (
         <Container>
+            <ProfilePhoto onClick={onProfile}/>
+            {
+                popupProfile &&
+                <ProfilePopup popupProfile={onProfile}/>
+            }
             <Item>
                 <Title className={'nickname'}>닉네임{nickname}</Title>
-                <ChangeButton>닉네임 변경</ChangeButton>
+                <ChangeButton onClick={onNickname}>닉네임 변경</ChangeButton>
+                {
+                    popupNickname &&
+                        <NicknamePopup popupNickname={onNickname}/>
+                }
             </Item>
 
             <Item>
@@ -39,6 +62,27 @@ const Container = styled.div`
     flex-direction:column;
     justify-content:flex-start;
 `
+const ProfilePhoto = styled.div`
+    position:relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: ${pxToRem(110)};
+    height: ${pxToRem(110)};
+    background: url(${Images.profile_img});
+    margin-top: ${pxToRem(30)};
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: ${pxToRem(6)};
+        right: ${pxToRem(6)};
+        width: ${pxToRem(24)};
+        height: ${pxToRem(24)};
+        background: url(${Images.profile_edit});
+    }
+`;
 const Item = styled.div`
     display:flex;
     align-items:center;

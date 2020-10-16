@@ -73,6 +73,7 @@ const Name = styled.div`
     padding: ${pxToRem(13)} ${pxToRem(16)} 0;
     img {
       margin-left: ${pxToRem(10)};
+      transition: all ease .3s;
       .isActive & {
           transform: rotate(180deg);
       }
@@ -87,9 +88,9 @@ const Item = styled.div`
     font-weight: 300;
     text-transform: uppercase;
     padding-left: ${pxToRem(16)};
-    .isActive & {
-        color: #01bdfd;
+    ${props => props.isActive &&`
         background: rgba(0,0,0,.1);
-    }
+        color: #01bdfd;
+    `}
 `;
 export default SubMenu;
