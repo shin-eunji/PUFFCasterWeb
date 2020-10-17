@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc3d43f0-4a09-4e2e-b142-86acef70dbbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../mern-todo/frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern-todo/frontend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/backend/src/controllers/health.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/backend/src/controllers/health.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/backend/src/controllers/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/backend/src/controllers/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/frontend/src/redux/todos/saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/frontend/src/redux/todos/saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mern/frontend/src/views/pages/Todos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mern/frontend/src/views/pages/Todos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-page/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-page/backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-page/frontend/src/redux/todos/saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-page/frontend/src/redux/todos/saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-page/frontend/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -56,7 +44,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,6 +80,7 @@
       <workItem from="1601012949272" duration="1274000" />
       <workItem from="1601564440171" duration="5473000" />
       <workItem from="1601785112169" duration="471000" />
+      <workItem from="1602660110947" duration="415000" />
     </task>
     <servers />
   </component>

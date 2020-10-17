@@ -11,7 +11,7 @@ import {authActions} from "../../../../redux/actionCreators";
 import {Button} from "../../../../common/Button/Button.Styled";
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 
-function PasswordNew(props) {
+function PasswordNew() {
 
     const {register, errors, handleSubmit} = useForm()
 
@@ -26,20 +26,20 @@ function PasswordNew(props) {
                 <AuthText data={PageTitle.passwordNew}/>
                 <AuthForm onSubmit={handleSubmit(onSubmit)}>
                     <InputGroup type={"password"}
-                                name={"password"}
+                                name={"passwordNew"}
                                 register={register({required: true})}
                                 placeholder={'새 비밀번호 입력'}
                                 errorType={errors?.password?.type}
                     />
-                    {errors.password && "필수 입력 사항입니다."}
+                    {errors.passwordNew && <span>문자, 숫자를 조합하여 6자 이상 입력해주세요.</span>}
 
                     <InputGroup type={"password"}
                                 name={"password"}
                                 register={register({required: false})}
                                 placeholder={'새 비밀번호 확인'}
-                                errorType={errors?.password?.type}
+                                errorType={errors?.passwordNewRe?.type}
                     />
-                    {errors.password && "필수 입력 사항입니다."}
+                    {errors.passwordNewRe && <span>비밀번호가 일치하지 않습니다.</span>}
 
                     <LoginButton sort={'caster'}
                                  size={'large'}

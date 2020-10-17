@@ -12,6 +12,7 @@ import {message, pxToRem} from "../../../common/Text/Text.Styled";
 import {authActions} from "../../../redux/actionCreators";
 import {navigate} from "../../../lib/History";
 import {LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
+import {Color} from "../../../common/Color/Color.Styled";
 
 function Login() {
 
@@ -33,7 +34,7 @@ function Login() {
                                 placeholder={'이메일을 입력하세요'}
                                 errorType={errors?.email?.type}
                     />
-                    {errors.email && "필수 입력 사항입니다."}
+                    {errors.email && <span>필수정보입니다.</span>}
 
                     <InputGroup type={"password"}
                                 name={"password"}
@@ -41,7 +42,7 @@ function Login() {
                                 placeholder={'비밀번호를 입력하세요'}
                                 errorType={errors?.password?.type}
                     />
-                    {errors.password && "필수 입력 사항입니다."}
+                    {errors.password && <span>필수정보입니다.</span>}
                     <PasswordText sort={'topaz'}
                                   onClick={() => navigate('/users/password/reset')}
                     >비밀번호를 잊으셨나요?</PasswordText>
@@ -69,6 +70,13 @@ const AuthForm = styled.form`
     display:flex;
     flex-direction:column;
     justify-content:center;
+    span {
+        position: relative;
+        top: ${pxToRem(-14)};
+        font-size: ${pxToRem(11)};
+        font-weight: 300;
+        color: ${Color.RED};
+    }
 `;
 const LoginButton = styled(Button)`
     margin-top: ${pxToRem(20)};
