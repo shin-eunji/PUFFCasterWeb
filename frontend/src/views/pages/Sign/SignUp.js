@@ -13,7 +13,7 @@ import AuthText from "../../components/Login/Title";
 import InputGroup from "../../components/Login/Form/Input";
 import {Color} from "../../../common/Color/Color.Styled";
 
-function Sign() {
+function SignUp() {
 
     const {register, handleSubmit, errors} = useForm();
 
@@ -125,4 +125,4 @@ const ChangeButton = styled(Button)`
     background-color: #61717c;
     margin-left: ${pxToRem(20)};
 `;
-export default Sign;
+export default SignUp;

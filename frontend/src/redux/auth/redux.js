@@ -3,17 +3,18 @@ import {createActions, createReducer} from 'reduxsauce'
 const initialState = {
     isLoading: true,
     isError: false,
-    memoList: null
+    memoList: null,
+    user: null,
+    onLoad: false,
 }
 
 export const Action = createActions({
     updateState: ['state'],
     signUp: ['data'],
     signIn: ['data'],
-    signOut: ['data'],
-    user: ['data'],
-    loaderData: [false]
-}, {prefix: 'auth'})
+    signOut: null,
+    getUserInfo: null,
+}, {prefix: 'AUTH/'})
 
 export const reducer = createReducer(initialState, {
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) =>
@@ -21,10 +22,4 @@ export const reducer = createReducer(initialState, {
             ...state,
             ...newState,
         }),
-
-    [Action.Types.LOADER_DATA]: (state, {state: newState}) =>
-        ({
-            ...state,
-            ...newState,
-        })
 })

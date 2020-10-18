@@ -9,7 +9,7 @@ const initialState = {
 
 export const Action = createActions({
     updateState: ['state'],
-}, {prefix: 'profile'})
+}, {prefix: 'PROFILE/'})
 
 export const reducer = createReducer(initialState, {
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) => ({

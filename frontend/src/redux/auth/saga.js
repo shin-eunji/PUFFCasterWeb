@@ -1,16 +1,17 @@
-import {all, takeLatest} from 'redux-saga/effects'
+import {all, takeLatest, put} from 'redux-saga/effects'
 import {Action} from './redux'
 import firebase from '../../lib/Firebase'
 import {navigate} from "../../lib/History";
+import {authActions} from "../actionCreators";
 
 
-export default function*() {
+export default function* () {
     yield all([
         takeLatest(Action.Types.SIGN_UP, function* ({data}) {
             console.log("[Saga Sign Up] data", data);
             yield firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
                 .then(res => {
-                    console.log("[Saga Sign Up] res", res);
+                    console.log("[Saga] SIGN_UP", res);
                     navigate('/products/caster')
                 })
                 .catch(function (error) {
@@ -22,41 +23,40 @@ export default function*() {
             console.log("data", data);
             yield firebase.auth().signInWithEmailAndPassword(data.email, data.password)
                 .then(res => {
-                    firebase.auth().onAuthStateChanged ((user) => {
-                        if(user) {
-                            console.log("[Saga Sign In] user", data);
-                            navigate('/mypage')
-                        } else {
-                            console.log("error");
-                            navigate('/error/type1')
-                        }
-                    })
+                    console.log("[Saga] SIGN_IN", res);
                     navigate('/')
                 })
                 .catch(function (error) {
                     console.log("error", error);
+                    navigate('/error/type1')
                 });
         }),
 
-        takeLatest(Action.Types.USER, function* ({data}) {
-            console.log("data", data);
-            yield firebase.auth().onAuthStateChanged ((user) => {
-                if(user) {
-                    console.log("[Saga Sign In] user", data);
-                    navigate('/mypage')
+        takeLatest(Action.Types.GET_USER_INFO, function* () {
+            yield firebase.auth().onAuthStateChanged(function (user) {
+                if (user) {
+                    console.log("[Saga] GET_USER_INFO", user);
+                    authActions.updateState({
+                        user: {
+                            email: user.email
+                        },
+                        onLoad: true
+                    })
                 } else {
                     console.log("error");
-                    navigate('/error/type1')
+                    authActions.updateState({
+                        user: null,
+                        onLoad: true,
+                    })
                 }
             })
 
         }),
 
-        takeLatest(Action.Types.SIGN_OUT, function* ({data}) {
-            console.log("[Saga Sign Out] data", data);
+        takeLatest(Action.Types.SIGN_OUT, function* () {
             yield firebase.auth().signOut()
                 .then(res => {
-                    console.log("[Saga Sign Out] res", res);
+                    console.log("[Saga] SIGN_OUT", res);
                     navigate('/products/caster')
                 })
                 .catch(function (error) {

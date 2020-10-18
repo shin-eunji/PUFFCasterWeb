@@ -9,6 +9,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 
 import Nav from "./Nav";
 import Member from "./Member";
+import {useSelector} from "react-redux";
 
 
 function Header (props) {
@@ -17,6 +18,8 @@ function Header (props) {
         location
     } = props;
 
+    const {user, onLoad} = useSelector(state => state.auth)
+
     return (
         <Container>
             <SContentContainer>
@@ -24,7 +27,7 @@ function Header (props) {
 
                 <Gnb>
                     <Nav location={location}/>
-                    <Member/>
+                    <Member onLoad={onLoad} user={user}/>
                 </Gnb>
 
             </SContentContainer>

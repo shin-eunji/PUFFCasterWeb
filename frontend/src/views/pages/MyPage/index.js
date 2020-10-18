@@ -5,9 +5,7 @@ import Profile from "./Profile";
 import Price from "./Price";
 import Setting from "./Setting";
 import {pxToRem} from "../../../common/Text/Text.Styled";
-import {useSelector} from "react-redux";
-import {profileActions} from "../../../redux/actionCreators";
-import ProfilePopup from "../../components/Popup/ProfilePopup";
+import {authActions} from "../../../redux/actionCreators";
 
 function MyPage(props) {
 
@@ -21,7 +19,7 @@ function MyPage(props) {
                 <Price/>
                 <Setting/>
                 <SignButton>
-                    <Text>로그아웃</Text>
+                    <Text onClick={() => authActions.signOut()}>로그아웃</Text>
                     <Text>회원탈퇴</Text>
 
                 </SignButton>

@@ -4,37 +4,32 @@ import {navigate} from "../../../lib/History";
 
 import {Button} from '../../../common/Button/Button.Styled';
 import {pxToRem} from "../../../common/Text/Text.Styled";
-import {authActions} from "../../../redux/actionCreators";
 import {Color} from "../../../common/Color/Color.Styled";
 
 
-function Member() {
-
-    const user = user => {
-        authActions.signIn(user)
-    }
+function Member({user, onLoad}) {
 
     return (
         <Container>
-            <LoginButton sort={'lime'}
-                         size={'small'}
-                         onClick={() => navigate('/login')}
-            >로그인
-            </LoginButton>
+            {
+                onLoad &&
+                    <>
+                        {
+                            user ?
+                                (<UserInfo onClick={() => navigate('/mypage')}>
+                                    <UserName>
+                                        <div>{user?.email}</div>
+                                        <span>님</span>
+                                    </UserName>
+                                </UserInfo>) : (<LoginButton sort={'lime'}
+                                                  size={'small'}
+                                                  onClick={() => navigate('/signin')}
+                            >로그인
+                            </LoginButton>)
+                        }
 
-            {/*{*/}
-            {/*    user ?*/}
-            {/*    (<Title>*/}
-            {/*        <Name>{user}</Name>*/}
-            {/*    </Title>)*/}
-            {/*         :*/}
-            {/*    (<LoginButton sort={'lime'}*/}
-            {/*                 size={'small'}*/}
-            {/*                 onClick={() => navigate('/login')}*/}
-            {/*    >로그인*/}
-            {/*    </LoginButton>)*/}
-
-            {/*}*/}
+                    </>
+            }
         </Container>
     )
 }
@@ -48,14 +43,26 @@ const LoginButton = styled(Button)`
        
        
 `;
-const Text = styled.div`
-    display:flex;
+const UserInfo = styled.div`
+    cursor: pointer;
 `;
-const Name = styled.div`
-  font-size: 18px;
-  font-weight:bold;
-  color: ${Color.WHITE}; 
-  
-    
+const UserName = styled.div`
+  display:flex;
+  align-items:center;
+  > div {
+      font-size: 15px;
+      flex: 1;
+      font-weight:400;
+      color: ${Color.WHITE};
+      display:block; 
+      width: ${pxToRem(100)}; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: right;
+  }
+  > span {
+      opacity: .6;
+  }
 `;
 export default Member;
