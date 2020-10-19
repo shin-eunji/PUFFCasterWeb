@@ -13,6 +13,7 @@ import {authActions} from "../../../redux/actionCreators";
 import {navigate} from "../../../lib/History";
 import {LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
+import Validation, {ValidationTypes} from "../../../lib/Validate";
 
 function SignIn() {
 
@@ -30,19 +31,31 @@ function SignIn() {
                 <AuthForm onSubmit={handleSubmit(onSubmit)}>
                     <InputGroup type={"text"}
                                 name={"email"}
-                                register={register({required: true})}
                                 placeholder={'이메일을 입력하세요'}
-                                errorType={errors?.email?.type}
+                                register={register({
+                                    required: true,
+                                    minLength: 8,
+                                    maxLength: 16,
+                                    validate: {
+                                        [ValidationTypes.IS_EMAIL]: value => Validation.isEmail(value),
+                                    },
+                                })}
+                                error={errors.email}
                     />
-                    {errors.email && <span>필수정보입니다.</span>}
 
                     <InputGroup type={"password"}
                                 name={"password"}
-                                register={register({required: true})}
                                 placeholder={'비밀번호를 입력하세요'}
-                                errorType={errors?.password?.type}
+                                register={register({
+                                    required: true,
+                                    minLength: 8,
+                                    maxLength: 16,
+                                    validate: {
+                                        [ValidationTypes.IS_VALID_PASSWORD]: value => Validation.isValidPassword(value),
+                                    },
+                                })}
+                                error={errors.password}
                     />
-                    {errors.password && <span>필수정보입니다.</span>}
                     <PasswordText sort={'topaz'}
                                   onClick={() => navigate('/users/password/reset')}
                     >비밀번호를 잊으셨나요?</PasswordText>

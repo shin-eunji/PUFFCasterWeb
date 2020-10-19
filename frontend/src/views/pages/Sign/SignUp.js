@@ -33,7 +33,7 @@ function SignUp() {
                                 name="email"
                                 placeholder='이메일을 입력하세요'
                                 register={register({
-                                    required: {value: true, message: '필수 정보입니다.'},
+                                    required: true,
                                     validate: {
                                         [ValidationTypes.IS_EMAIL]: value => Validation.isEmail(value)
                                     },

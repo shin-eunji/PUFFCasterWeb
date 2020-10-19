@@ -23,29 +23,33 @@ function FormMessage(props) {
             }
 
             {
-                error?.type &&
-                <span className={'error'}>필수정보입니다</span>
+                error?.type === "required" && <span className={'error'}>필수정보 입니다.</span>
             }
+
             {
                 error?.type === ValidationTypes.IS_EMAIL &&
-                <span>이메일 양식이 올바르지 않습니다.</span>
+                <span className={'error'}>이메일 양식이 올바르지 않습니다.</span>
             }
             {
                 error?.type === ValidationTypes.IS_VALID_NICKNAME &&
-                <span>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</span>
+                <span className={'error'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</span>
             }
             {
                 error?.type === ValidationTypes.IS_VALID_PASSWORD &&
-                <span>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+                <span className={'error'}>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
             }
             {
                 error?.type === ValidationTypes.REPEAT_PASSWORD &&
-                <span>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+                <span className={'error'}>비밀번호가 일치하지 않습니다.</span>
             }
+
+
 
             {
-
+                error?.type === "maxLength" &&
+                <span className={'error'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</span>
             }
+
 
         </Container>
     )
@@ -66,6 +70,9 @@ const Container = styled.div`
     }
     .error {
         color: ${Color.RED};
+    }
+    .success {
+        color: ${Color.TOPAZ};
     }
 }
 `
