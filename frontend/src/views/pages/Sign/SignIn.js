@@ -14,7 +14,7 @@ import {navigate} from "../../../lib/History";
 import {LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 
-function Login() {
+function SignIn() {
 
     const {register, errors, handleSubmit} = useForm()
 
@@ -54,7 +54,7 @@ function Login() {
                 <Text>
                     <Message sort={'gray'}>계정이 필요하세요?</Message>
                     <SignText sort={'topaz'}
-                              onClick={() => navigate('/sign')}
+                              onClick={() => navigate('/signup')}
                     >가입하기</SignText>
                 </Text>
             </SContentContainer>
@@ -100,4 +100,4 @@ const Message = styled(message)`
 const SignText = styled(message)`
     cursor: pointer;
 `;
-export default Login;
+export default SignIn;

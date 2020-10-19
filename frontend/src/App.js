@@ -7,13 +7,19 @@ import Footer from "./views/components/Footer";
 import {authActions} from "./redux/actionCreators";
 import {useSelector} from "react-redux";
 import ProfilePopup from "./views/components/Popup/ProfilePopup";
+import {HISTORY} from "./lib/History";
 
 
 
 function App () {
-
+    
     useEffect(() => {
-            authActions.user()
+            authActions.getUserInfo()
+            HISTORY.listen((location, action) => {
+                if(action === 'PUSH') {
+                    window.scrollTo(0, 0)
+                }
+            })
     },[])
 
     const { popup } = useSelector(state => state.profile)

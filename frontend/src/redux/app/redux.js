@@ -6,7 +6,7 @@ const initialState = {
 
 export const Action = createActions({
     updateState: ['state'],
-}, {prefix: 'app'})
+}, {prefix: 'APP/'})
 
 export const reducer = createReducer(initialState, {
     [Action.Types.UPDATE_STATE]: (state, {state: newState}) => ({

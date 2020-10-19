@@ -12,12 +12,15 @@ import {message, pxToRem} from "../../../common/Text/Text.Styled";
 import AuthText from "../../components/Login/Title";
 import InputGroup from "../../components/Login/Form/Input";
 import {Color} from "../../../common/Color/Color.Styled";
+import Validation, {ValidationTypes} from "../../../lib/Validate";
+import FormMessage from "../../components/Form/FormMessage";
 
-function Sign() {
+function SignUp() {
 
     const {register, handleSubmit, errors} = useForm();
 
     const onSubmit = data => authActions.signUp(data);
+    console.log("errors", errors);
 
     return (
         <Container>
@@ -29,21 +32,26 @@ function Sign() {
                     <InputGroup type="text"
                                 name="email"
                                 placeholder='이메일을 입력하세요'
-                                register={register({required: true})}
-                                errorType={errors?.email?.type}
+                                register={register({
+                                    required: true,
+                                    validate: {
+                                        [ValidationTypes.IS_EMAIL]: value => Validation.isEmail(value),
+                                    },
+                                })}
+                                error={errors.email}
                     />
-                    {errors.emaill && <span>이메일 양식이 올바르지 않습니다.</span>}
 
-                    <InputNick>
-                        <Input type={"text"}
-                                    name={"nickname"}
-                                    register={register}
-                                    placeholder={'닉네임 입력하세요'}
-                                    errorType={errors?.nickname?.type}
-                        />
-                        <ChangeButton>중복확인</ChangeButton>
-                    </InputNick>
-                    {errors.nickname && <span>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</span>}
+                    <InputGroup type={"text"}
+                                name={"nickname"}
+                                placeholder={'닉네임 입력하세요'}
+                                errorType={errors?.nickname?.type}
+                                register={register({
+                                    required: true,
+                                    validate: {
+                                        [ValidationTypes.IS_VALID_NICKNAME]: value => Validation.isValidNickname(value),
+                                    },
+                                })}
+                                error={errors.nickname}/>
 
                     <InputGroup type="password"
                                 name="password"
@@ -85,13 +93,6 @@ function Sign() {
 const Container = styled(SContainer)`
 `
 const SContentContainer = styled(LoginContainer)`
-    span {
-        position: relative;
-        top: ${pxToRem(-14)};
-        font-size: ${pxToRem(11)};
-        font-weight: 300;
-        color: ${Color.RED};
-    }
 `;
 const LoginButton = styled(Button)`
     
@@ -107,22 +108,4 @@ const Message = styled(message)`
     display: inline-block;
     cursor: pointer;
 `;
-const InputNick = styled.div`
-    display:flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    width: ${pxToRem(320)};
-`;
-const Input = styled(InputGroup)`
-    
-`;
-const ChangeButton = styled(Button)`
-    width: ${pxToRem(80)};
-    height: ${pxToRem(50)};
-    font-size: ${pxToRem(14)};
-    font-weight: bold;
-    border-radius: ${pxToRem(6)};
-    background-color: #61717c;
-    margin-left: ${pxToRem(20)};
-`;
-export default Sign;
+export default SignUp;
