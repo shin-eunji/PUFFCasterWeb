@@ -30,18 +30,20 @@ function InputGroup(props) {
                     <ChangeButton>중복확인</ChangeButton>
                 }
             </Container>
-            <FormMessage error={error}/>
+            <FormMessage name={name} error={error} register={register}/>
         </>
     )
 
 }
 
 const Container = styled.div`
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
 `;
 const InputText = styled(Input)`
-    margin-bottom: ${pxToRem(20)};
-    
-    ${props => props.size === 'nickname' && `
+    margin-bottom: ${pxToRem(30)};
+    ${props => props.name === 'nickname' && `
        width: ${pxToRem(220)};
     `} 
 `

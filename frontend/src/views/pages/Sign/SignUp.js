@@ -33,9 +33,9 @@ function SignUp() {
                                 name="email"
                                 placeholder='이메일을 입력하세요'
                                 register={register({
-                                    required: true,
+                                    required: {value: true, message: '필수 정보입니다.'},
                                     validate: {
-                                        [ValidationTypes.IS_EMAIL]: value => Validation.isEmail(value),
+                                        [ValidationTypes.IS_EMAIL]: value => Validation.isEmail(value)
                                     },
                                 })}
                                 error={errors.email}
@@ -44,30 +44,43 @@ function SignUp() {
                     <InputGroup type={"text"}
                                 name={"nickname"}
                                 placeholder={'닉네임 입력하세요'}
-                                errorType={errors?.nickname?.type}
                                 register={register({
                                     required: true,
+                                    maxLength: 15,
                                     validate: {
                                         [ValidationTypes.IS_VALID_NICKNAME]: value => Validation.isValidNickname(value),
                                     },
                                 })}
-                                error={errors.nickname}/>
+                                error={errors.nickname}
+                    />
 
                     <InputGroup type="password"
                                 name="password"
-                                register={register({required: true})}
                                 placeholder='비밀번호를 입력하세요'
-                                errorType={errors?.password?.type}
+                                register={register({
+                                    required: true,
+                                    minLength: 8,
+                                    maxLength: 16,
+                                    validate: {
+                                        [ValidationTypes.IS_VALID_PASSWORD]: value => Validation.isValidPassword(value),
+                                    },
+                                })}
+                                error={errors.password}
                     />
-                    {errors.password && <span>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>}
 
                     <InputGroup type={"password"}
                                 name={"passwordRe"}
-                                register={register}
                                 placeholder={'비밀번호를 재입력해주세요'}
-                                errorType={errors?.passwordRe?.type}
+                                register={register({
+                                    required: true,
+                                    minLength: 8,
+                                    maxLength: 16,
+                                    validate: {
+                                        [ValidationTypes.IS_VALID_PASSWORD]: value => Validation.isValidPassword(value),
+                                    },
+                                })}
+                                error={errors.passwordRe}
                     />
-                    {errors.passwordRe && <span>비밀번호가 일치하지 않습니다.</span>}
 
                     <LoginButton sort={'caster'}
                                  size={'large'}
