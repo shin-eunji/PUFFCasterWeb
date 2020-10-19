@@ -48,13 +48,13 @@ function Routes (props) {
 
                 <Route path={'/terms'} component={Terms}/>
                 <Route path={'/policy'} component={Policy}/>
+
+                <Route path={'/error/type1'} component={TypeHome}/>
+
                 <Route path={'/faq'} component={Faq}/>
+                <Redirect exact from={'/'} to={'/products/caster'}/>
 
-                <Route exact path={'/error/type1'} component={Error}/>
-
-                <Redirect exact from={'/'} to={'/produts/caster'}/>
-
-                {/*<Redirect to={'/error/type1'} />*/}
+                <Redirect to={'/error/type1'} />
 
             </Switch>
         </Container>
