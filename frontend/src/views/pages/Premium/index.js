@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 
-import {LoginContainer} from "../../../common/Layout/Components.Styled";
+import {customMedia, LoginContainer} from "../../../common/Layout/Components.Styled";
 import {PageTitle} from "../../components/Data/Title";
 import {premiumData} from "../../components/Data/Premium";
 
@@ -10,7 +10,8 @@ import Title from "../../components/Login/Title";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {Images} from "../../../common/Images";
-import {navigate} from "../../../lib/History";
+import {HISTORY, navigate} from "../../../lib/History";
+import {authActions} from "../../../redux/actionCreators";
 
 function Premium(props) {
 
@@ -33,7 +34,6 @@ function Premium(props) {
 }
 
 const Container = styled.div`
-     
     &::before {
         content: '';
         position:absolute;
@@ -52,6 +52,15 @@ const PlanContainer = styled.div`
     align-items:center;
     margin: ${pxToRem(30)} 0 ${pxToRem(40)};
     z-index: 100;
+    ${customMedia.lessThan('tablet')`
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0 ${pxToRem(220)}; 
+    `}
+    ${customMedia.lessThan('mobile')`
+        padding: 0 ${pxToRem(70)};
+    `}
     > * {
         &:nth-child(2) {
             content: '';

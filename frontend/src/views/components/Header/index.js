@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import {navigate} from "../../../lib/History";
 import {withRouter} from "react-router-dom";
 
-import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia} from "../../../common/Layout/Components.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
 import Nav from "./Nav";
 import Member from "./Member";
 import {useSelector} from "react-redux";
+import MobileNav from "./MobileNav";
 
 
 function Header (props) {
@@ -27,6 +28,7 @@ function Header (props) {
 
                 <Gnb>
                     <Nav location={location}/>
+                    <MobileNav location={location}/>
                     <Member onLoad={onLoad} user={user}/>
                 </Gnb>
 
@@ -36,6 +38,10 @@ function Header (props) {
 }
 
 const Container = styled.div`
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     height: ${pxToRem(80)};
     background: ${Color.DARK};
     z-index: 100;
@@ -51,6 +57,7 @@ const Logo = styled.h1`
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
+    z-index: 1000;
 `;
 const Gnb = styled.div`
     display:flex;
@@ -58,7 +65,10 @@ const Gnb = styled.div`
     justify-content: space-between;
     height: ${pxToRem(80)};
     color: ${Color.WHITE};
-      
+    ${customMedia.lessThan('mobile')`
+        display:flex;
+        flex-direction: row-reverse;
+    `}
 `;
 
 export default withRouter(Header);

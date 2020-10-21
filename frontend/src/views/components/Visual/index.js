@@ -18,5 +18,6 @@ function index(props) {
 }
 
 const Container = styled.div`
+    
 `
 export default index;

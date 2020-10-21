@@ -44,6 +44,7 @@ const Container = styled.div`
         width: ${pxToRem(300)};
         height: ${pxToRem(330)};
         background: url(${Images.service_parttern1});
+        z-index: 10;
     }
     &::after {
         content: '';
@@ -53,6 +54,7 @@ const Container = styled.div`
         width: ${pxToRem(390)};
         height: ${pxToRem(330)};
         background: url(${Images.service_parttern2});
+        z-index: 10;
     }
 `
 const SContentContainer = styled(ContentContainer)`
@@ -60,6 +62,7 @@ const SContentContainer = styled(ContentContainer)`
     flex-direction:column;
     align-items:center;
     padding-top: ${pxToRem(140)};
+    z-index: 100;
     .caution {
         color: #777;
         font-size: ${pxToRem(14)};

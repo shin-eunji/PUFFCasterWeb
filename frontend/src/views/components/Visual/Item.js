@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia} from "../../../common/Layout/Components.Styled";
 import {Button} from "../../../common/Button/Button.Styled";
 import {Images} from "../../../common/Images";
 import {pxToRem} from "../../../common/Text/Text.Styled";
@@ -77,6 +77,12 @@ const SContentContainer = styled(ContentContainer)`
     white-space: pre-wrap;
     padding-top: ${pxToRem(125)};
     
+    
+    ${customMedia.lessThan('tablet')`
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+    `}
     &::before {
         content: '';
         position: absolute;
@@ -95,16 +101,31 @@ const SContentContainer = styled(ContentContainer)`
         width: ${pxToRem(470)};
         height: ${pxToRem(600)};
         background: url(${Images.parttern2});
+        ${customMedia.lessThan('tablet')`
+            right: ${pxToRem(30)};    
+        `}
     }
 `;
 const Text = styled.div`
     flex: 1;
+    ${customMedia.lessThan('tablet')`
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+    `}
     h2 {
         color: ${Color.WHITE};
         font-size: ${pxToRem(48)};
         font-weight: bold;
         line-height: 1.3;
-        margin-bottom: ${pxToRem(35)}; 
+        margin-bottom: ${pxToRem(35)};
+         
+        ${customMedia.lessThan('mobile')`
+            font-size: ${pxToRem(38)};
+        `}
     }
     p {
         color: #ccc;
@@ -112,6 +133,10 @@ const Text = styled.div`
         font-weight: 300;
         line-height: 1.7;
         margin-bottom: ${pxToRem(14)}; 
+        
+        ${customMedia.lessThan('mobile')`
+            font-size: ${pxToRem(14)};
+        `}
     }
     .more {
         display:flex;
@@ -162,10 +187,15 @@ const PlatformIcon = styled.div`
     justify-content: flex-start;
     img {
         margin-right: ${pxToRem(36)};
+        ${customMedia.lessThan('tablet')`
+            margin: 0 ${pxToRem(18)};
+        `}
     }
 `;
 const Thumbnail = styled.div`
-    
+    ${customMedia.lessThan('tablet')`
+        display:none;
+    `}
 `;
 
 export default Item;
