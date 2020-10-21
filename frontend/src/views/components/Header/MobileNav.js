@@ -68,13 +68,14 @@ const Nav = styled.div`
     z-index: 100;
     cursor: inherit;
 `;
-const ButtonClose = styled(Button)`
+const ButtonClose = styled.button`
     position: absolute;
     top: ${pxToRem(20)};
-    right: ${pxToRem(20)};
+    right: ${pxToRem(15)};
     width: ${pxToRem(40)};
     height: ${pxToRem(40)};
     background: url(${Images.mobile_menu_close});
+    border: none;
     z-index: 1000;
     cursor: pointer;
     margin-left: ${pxToRem(20)};

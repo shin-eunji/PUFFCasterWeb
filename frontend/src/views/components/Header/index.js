@@ -38,10 +38,6 @@ function Header (props) {
 }
 
 const Container = styled.div`
-    position:fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     height: ${pxToRem(80)};
     background: ${Color.DARK};
     z-index: 100;

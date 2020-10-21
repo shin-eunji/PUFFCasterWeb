@@ -2,10 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {Color} from "../../../../common/Color/Color.Styled";
+import {useSelector} from "react-redux";
+import {appActions} from "../../../../redux/actionCreators";
 
 function SettingContents(props) {
 
     const {} = props;
+
+    const {toggle} = useSelector(state => state.app)
+
+    const handleToggle = () => appActions.updateState({toggle: !toggle})
 
     return (
         <Container>
@@ -15,7 +21,12 @@ function SettingContents(props) {
                     <Description>이메일로 각종 이벤트와 혜택에 대한 안내를 발송합니다.
                         단, 중요한 공지사항과 알림은 수신여부와 관계없이 발송됩니다.</Description>
                 </Text>
-                <Button>ON</Button>
+                <Button onClick={handleToggle}>
+                    {
+                        toggle ?
+                            <span className={'on'}>ON</span> : <span className={'off'}>OFF</span>
+                    }
+                </Button>
             </Item>
         </Container>
     )
@@ -50,19 +61,31 @@ const Description = styled.div`
     font-weight: 400;
     
 `;
-const Button = styled.div`
+const Button = styled.button`
     display:flex;
-    align-items:center;
-    justify-content:center;
-    line-height: 1.4;
-    width: ${pxToRem(68)};
-    height: ${pxToRem(33)};
-    border: 1px solid ${Color.TOPAZ};
-    border-radius: ${pxToRem(30)};
-    color: ${Color.TOPAZ};
-    background: #fff;
-    font-size: ${pxToRem(16)};
-    font-weight: 400;
     cursor: pointer;
+    background:none;
+    border: none;
+    > * {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        line-height: 1.4;
+        width: ${pxToRem(68)};
+        height: ${pxToRem(33)};
+        border-radius: ${pxToRem(30)};
+        background: #fff;
+        font-size: ${pxToRem(16)};
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .on {
+        border: 1px solid ${Color.TOPAZ};
+        color: ${Color.TOPAZ};
+    }
+    .off {
+        color: #aaa;
+        border: 1px solid #ccc;
+    }
 `;
 export default SettingContents;

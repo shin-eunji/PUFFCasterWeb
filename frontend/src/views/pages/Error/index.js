@@ -28,9 +28,6 @@ function Error(props) {
 const Container = styled(SContainer)`
 `
 const SContentContainer = styled(LoginContainer)`
-   img {
-      margin-bottom: ${pxToRem(35)};
-   }
 `;
 
 export default Error;
