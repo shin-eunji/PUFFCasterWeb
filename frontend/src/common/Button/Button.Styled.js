@@ -68,6 +68,24 @@ export const Button = styled.button`
     user-select: none;
     border: 1px solid transparent;
     border-radius: ${pxToRem(6)};
+    &:hover {
+        position:relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        color: rgba(0,0,0,.4);
+        &::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          opacity: .4;
+        }
+    }
     &:focus {
         outline: 0;
     }

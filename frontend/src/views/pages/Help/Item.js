@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Item (props) {
+function Item(props) {
 
     const {
         content,
@@ -14,7 +14,8 @@ function Item (props) {
                     <Text key={index}>
                         <h4>{item.title}</h4>
                         <p>{item.description}</p>
-                </Text>)
+                    </Text>
+                )
             }
         </Container>
     )

@@ -6,23 +6,29 @@ import AuthText from "../../components/Login/Title";
 import {Button} from "../../../common/Button/Button.Styled";
 import {navigate} from "../../../lib/History";
 import {pxToRem} from "../../../common/Text/Text.Styled";
+import {ContentContainer, SContainer} from "../../../common/Layout/Components.Styled";
 
-function TypeHome (props) {
+function TypeHome(props) {
 
     const {} = props;
 
     return (
         <Container>
-            <img src={Images.img_error} alt="에러 이미지"/>
-            <AuthText data={PageTitle.error}/>
-            <HomeButton sort={'line'}
-                        onClick={() => navigate('/')}
-            >홈페이지로 돌아가기</HomeButton>
+            <SContentContainer>
+                <img src={Images.img_error} alt="에러 이미지"/>
+                <AuthText data={PageTitle.error}/>
+                <HomeButton sort={'line'}
+                            onClick={() => navigate('/')}
+                >홈페이지로 돌아가기</HomeButton>
+            </SContentContainer>
         </Container>
     )
 }
 
-const Container = styled.div`
+const Container = styled(SContainer)`
+    display:flex;
+`;
+const SContentContainer = styled(ContentContainer)`
     display:flex;
     flex-direction:column;
     align-items:center;

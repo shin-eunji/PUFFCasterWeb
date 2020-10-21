@@ -27,12 +27,17 @@ import info from './icons/35.png'
 import profile_img from './profile_thumbnail_img_110.svg'
 import profile_edit from './profile_thumbnail_edit.svg'
 import profile_thumbnail_img from './icons/profile_thumbnail_img.svg'
+import guide_menu_dropdown_open from './guide_menu_dropdown_open.svg'
+import guide_menu_dropdown_close from './guide_menu_dropdown_close.svg'
 
 
 
 export const Images = {
     gnb_dropdown,
     gnb_dropdown_open,
+    guide_menu_dropdown_open,
+    guide_menu_dropdown_close,
+
     mobile_menu,
     mobile_menu_close,
     profile_thumbnail_img,
