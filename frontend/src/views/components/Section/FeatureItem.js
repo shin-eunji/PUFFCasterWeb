@@ -41,6 +41,13 @@ const SContentContainer = styled(ContentContainer)`
     .reverse & {
         flex-direction: row-reverse;
     }
+    
+    ${customMedia.lessThan('mobile')`
+        flex-direction:column-reverse;
+        .reverse & {
+            flex-direction:column-reverse;
+        }
+    `} 
 `;
 const Text = styled.div`
     flex: 1;
@@ -48,6 +55,10 @@ const Text = styled.div`
     white-space: pre-wrap;
     ${customMedia.lessThan('tablet')`
         width: ${pxToRem(320)};
+    `}
+    ${customMedia.lessThan('mobile')`
+        text-align: center;
+        margin-top: ${pxToRem(20)};
     `}
     .reverse & {
         margin-left: ${pxToRem(60)};

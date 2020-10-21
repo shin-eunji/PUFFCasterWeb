@@ -7,6 +7,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {Images} from "../../../common/Images";
 import SubMenu from "./SubMenu";
+import {customMedia} from "../../../common/Layout/Components.Styled";
 
 function NavItem(props) {
 
@@ -41,11 +42,11 @@ function NavItem(props) {
             </ItemName>
             {
                 menu &&
-                    <SubMenu name={name}
-                             location={location}
-                             routes={subRoutes}
-                             onClose={() => setMenu(false)}
-                    />
+                <SubMenu name={name}
+                         location={location}
+                         routes={subRoutes}
+                         onClose={() => setMenu(false)}
+                />
             }
 
         </Container>
@@ -64,7 +65,7 @@ const ItemName = styled.div`
     font-size: ${pxToRem(14)};
     font-weight: 400;
     opacity: .6;
-    ${props => props.isActive &&`
+    ${props => props.isActive && `
         opacity: 1;
     `}
     img {

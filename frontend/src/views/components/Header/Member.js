@@ -5,6 +5,7 @@ import {navigate} from "../../../lib/History";
 import {Button} from '../../../common/Button/Button.Styled';
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
+import {Images} from "../../../common/Images";
 
 
 function Member({user, onLoad}) {
@@ -21,6 +22,7 @@ function Member({user, onLoad}) {
                                         <div>{user?.email}</div>
                                         <span>님</span>
                                     </UserName>
+                                    <UserImg/>
                                 </UserInfo>) : (<LoginButton sort={'lime'}
                                                   size={'small'}
                                                   onClick={() => navigate('/signin')}
@@ -38,12 +40,15 @@ const Container = styled.div`
     width: ${pxToRem(210)};
     display:flex;
     justify-content:flex-end;
+    z-index: 102;
 `
 const LoginButton = styled(Button)`
        
        
 `;
 const UserInfo = styled.div`
+    display:flex;
+    align-items:center;
     cursor: pointer;
 `;
 const UserName = styled.div`
@@ -64,5 +69,11 @@ const UserName = styled.div`
   > span {
       opacity: .6;
   }
+`;
+const UserImg = styled.div`
+    width: ${pxToRem(30)};
+    height: ${pxToRem(30)};
+    background: url(${Images.profile_thumbnail_img});
+    margin-left: ${pxToRem(10)};
 `;
 export default Member;
