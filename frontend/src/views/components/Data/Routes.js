@@ -1,7 +1,7 @@
 export const NavRoutes = [
     {
         name: '제품',
-        to: '/products',
+        to: '/products/caster',
         isActive: true,
         subRoutes: [
             {

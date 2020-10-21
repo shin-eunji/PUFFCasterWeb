@@ -56,7 +56,10 @@ const PlanContainer = styled.div`
         width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-left: ${pxToRem(220)}; 
+        padding: 0 ${pxToRem(220)}; 
+    `}
+    ${customMedia.lessThan('mobile')`
+        padding: 0 ${pxToRem(70)};
     `}
     > * {
         &:nth-child(2) {

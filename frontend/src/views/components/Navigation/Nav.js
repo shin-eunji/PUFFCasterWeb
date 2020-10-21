@@ -6,6 +6,7 @@ import {navigate} from "../../../lib/History";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {SubRoutes} from "../Data/Routes";
+import {customMedia} from "../../../common/Layout/Components.Styled";
 
 function Nav(props) {
 
@@ -79,5 +80,6 @@ const Icon = styled.div`
 `;
 const Name = styled.div`
     color: ${Color.WHITE};
+    font-size: ${pxToRem(15)};
 `;
 export default Nav;

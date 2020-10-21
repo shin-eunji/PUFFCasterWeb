@@ -8,6 +8,8 @@ import apple_icn from './icons/apple_icn.svg'
 import download_icn from './icons/download_icn.svg'
 import visual_caster from './visual_caster.png'
 import visual_chat from './visual_play.png'
+import mobile_menu from './icons/mobile_menu.svg'
+import mobile_menu_close from './icons/mobile_menu_close.svg'
 
 import parttern1 from './main_parttern1.svg'
 import parttern2 from './main_parttern2.svg'
@@ -24,12 +26,16 @@ import price_check_uncheck from './icons/pricing_icn_uncheck.svg'
 import info from './icons/35.png'
 import profile_img from './profile_thumbnail_img_110.svg'
 import profile_edit from './profile_thumbnail_edit.svg'
+import profile_thumbnail_img from './icons/profile_thumbnail_img.svg'
 
 
 
 export const Images = {
     gnb_dropdown,
     gnb_dropdown_open,
+    mobile_menu,
+    mobile_menu_close,
+    profile_thumbnail_img,
 
     visual_caster,
     visual_chat,

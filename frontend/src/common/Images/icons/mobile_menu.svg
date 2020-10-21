@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__mobile_menu" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <path id="prefix__사각형_8548" d="M0 0H40V40H0z" data-name="사각형 8548" style="fill:none;opacity:.3"/>
+    <rect id="prefix__사각형_8549" width="4" height="4" class="prefix__cls-2" data-name="사각형 8549" rx="1" transform="translate(18 18)"/>
+    <rect id="prefix__사각형_8555" width="4" height="4" class="prefix__cls-2" data-name="사각형 8555" rx="1" transform="translate(27 18)"/>
+    <rect id="prefix__사각형_8558" width="4" height="4" class="prefix__cls-2" data-name="사각형 8558" rx="1" transform="translate(9 18)"/>
+    <rect id="prefix__사각형_8552" width="4" height="4" class="prefix__cls-2" data-name="사각형 8552" rx="1" transform="translate(18 9)"/>
+    <rect id="prefix__사각형_8556" width="4" height="4" class="prefix__cls-2" data-name="사각형 8556" rx="1" transform="translate(27 9)"/>
+    <rect id="prefix__사각형_8559" width="4" height="4" class="prefix__cls-2" data-name="사각형 8559" rx="1" transform="translate(9 9)"/>
+    <rect id="prefix__사각형_8553" width="4" height="4" class="prefix__cls-2" data-name="사각형 8553" rx="1" transform="translate(18 27)"/>
+    <rect id="prefix__사각형_8554" width="4" height="4" class="prefix__cls-2" data-name="사각형 8554" rx="1" transform="translate(27 27)"/>
+    <rect id="prefix__사각형_8557" width="4" height="4" class="prefix__cls-2" data-name="사각형 8557" rx="1" transform="translate(9 27)"/>
+</svg>

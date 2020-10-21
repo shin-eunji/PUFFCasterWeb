@@ -121,7 +121,11 @@ const Text = styled.div`
         font-size: ${pxToRem(48)};
         font-weight: bold;
         line-height: 1.3;
-        margin-bottom: ${pxToRem(35)}; 
+        margin-bottom: ${pxToRem(35)};
+         
+        ${customMedia.lessThan('mobile')`
+            font-size: ${pxToRem(38)};
+        `}
     }
     p {
         color: #ccc;
@@ -129,6 +133,10 @@ const Text = styled.div`
         font-weight: 300;
         line-height: 1.7;
         margin-bottom: ${pxToRem(14)}; 
+        
+        ${customMedia.lessThan('mobile')`
+            font-size: ${pxToRem(14)};
+        `}
     }
     .more {
         display:flex;
