@@ -15,6 +15,24 @@ function BoardList (props) {
 
     const {dropdown} = useSelector(state => state.app)
 
+    const list = {
+        contents: [
+            {
+                title: "Title 1",
+                body: "Hi. I love this component. What do you think?"
+            },
+            {
+                title: "See this one too",
+                body: "Yes. You can have more items."
+            },
+            {
+                title: "Thrid thing",
+                body:
+                    "What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text? What about very long text?"
+            }
+        ]
+    };
+
     return (
         <Container>
             <h2>버전 1.0</h2>
@@ -23,42 +41,6 @@ function BoardList (props) {
                 <Content>
                     <Title onClick={toggleDrop}>
                         <Text>자주 묻는 질문 1</Text>
-                        <Icon></Icon>
-                    </Title>
-                    {
-                        dropdown &&
-                        <Description>
-                            본문텍스트 Regular 강조는 medium
-                            본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스
-                            트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍
-                            스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스
-                            링크는 medium
-                        </Description>
-
-                    }
-                </Content>
-
-                <Content>
-                    <Title onClick={toggleDrop}>
-                        <Text>자주 묻는 질문 2</Text>
-                        <Icon></Icon>
-                    </Title>
-                    {
-                        dropdown &&
-                        <Description>
-                            본문텍스트 Regular 강조는 medium
-                            본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스
-                            트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍
-                            스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스트본문텍스
-                            링크는 medium
-                        </Description>
-
-                    }
-                </Content>
-
-                <Content>
-                    <Title onClick={toggleDrop}>
-                        <Text>자주 묻는 질문 3</Text>
                         <Icon></Icon>
                     </Title>
                     {
