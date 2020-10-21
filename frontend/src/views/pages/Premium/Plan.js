@@ -49,7 +49,7 @@ const PlanContainer = styled.div`
     display:flex;
     align-items:center;
     margin: ${pxToRem(30)} 0 ${pxToRem(40)};
-    z-index: 100;
+    z-index: 99;
     > * {
         &:nth-child(2) {
             content: '';
