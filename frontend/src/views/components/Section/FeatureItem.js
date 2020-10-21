@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 
-import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia} from "../../../common/Layout/Components.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
@@ -34,8 +34,10 @@ const Container = styled.div`
     margin: 150px 0;
 `
 const SContentContainer = styled(ContentContainer)`
+    position:relative;
     display:flex;
     align-items:center;
+    overflow: hidden;
     .reverse & {
         flex-direction: row-reverse;
     }
@@ -44,6 +46,9 @@ const Text = styled.div`
     flex: 1;
     width: ${pxToRem(320)};
     white-space: pre-wrap;
+    ${customMedia.lessThan('tablet')`
+        width: ${pxToRem(320)};
+    `}
     .reverse & {
         margin-left: ${pxToRem(60)};
     }
@@ -75,5 +80,9 @@ const Preview = styled.div`
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
     background-color: #272c33;
     cursor: pointer;
+    ${customMedia.lessThan('tablet')`
+        width: ${pxToRem(420)};
+        height: ${pxToRem(330)};
+    `}
 `;
 export default FeatureItem;
