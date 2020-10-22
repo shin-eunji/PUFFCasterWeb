@@ -4,7 +4,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 import {appActions} from "../../../redux/actionCreators";
 import {navigate} from "../../../lib/History";
 
-function MobilNavItem (props) {
+function MobileNavItem (props) {
 
     const {
         name,
@@ -34,4 +34,4 @@ const ItemName = styled.div`
     margin-top: ${pxToRem(20)};
     cursor: pointer;
 `;
-export default MobilNavItem;
+export default MobileNavItem;
