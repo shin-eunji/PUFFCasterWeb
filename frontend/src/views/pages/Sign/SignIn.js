@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {useForm} from "react-hook-form";
 
-
 import {PageTitle} from "../../components/Data/Title";
 import AuthText from "../../components/Login/Title";
 import InputGroup from "../../components/Login/Form/Input";
