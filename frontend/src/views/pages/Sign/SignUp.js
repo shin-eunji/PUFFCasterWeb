@@ -11,9 +11,7 @@ import {message, pxToRem} from "../../../common/Text/Text.Styled";
 
 import AuthText from "../../components/Login/Title";
 import InputGroup from "../../components/Login/Form/Input";
-import {Color} from "../../../common/Color/Color.Styled";
 import Validation, {ValidationTypes} from "../../../lib/Validate";
-import FormMessage from "../../components/Form/FormMessage";
 
 function SignUp() {
 

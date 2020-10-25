@@ -8,7 +8,7 @@ import {useSelector} from "react-redux";
 import {appActions} from "../../../redux/actionCreators";
 import {NavRoutes} from "../Data/Routes";
 import {Button} from "../../../common/Button/Button.Styled";
-import MobilNavItem from "./MobilNavItem";
+import MobileNavItem from "./MobileNavItem";
 import {Color} from "../../../common/Color/Color.Styled";
 
 function MobileNav(props) {
@@ -19,21 +19,21 @@ function MobileNav(props) {
 
     const {openSidebar} = useSelector(state => state.app)
 
-    const MenuClose = () => appActions.updateState({openSidebar: false})
 
-    const handleMenu = () => appActions.updateState({openSidebar: true})
+    const MenuOpen = () => appActions.updateState({openSidebar: true})
+    const MenuClose = () => appActions.updateState({openSidebar: false})
 
 
     return (
         <Container>
-            <ButtonOpen onClick={handleMenu}/>
+            <ButtonOpen onClick={MenuOpen}/>
             {
                 openSidebar &&
-                <Nav openSidebar={handleMenu}>
+                <Nav openSidebar={MenuOpen}>
                     <ButtonClose onClick={MenuClose}/>
                     <Item>
                         {
-                            NavRoutes.map((route, index) => <MobilNavItem key={index} {...route} location={location}/>)
+                            NavRoutes.map((route, index) => <MobileNavItem key={index} {...route} location={location}/>)
                         }
                     </Item>
                 </Nav>
