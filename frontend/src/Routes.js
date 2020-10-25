@@ -52,6 +52,7 @@ function Routes (props) {
                 <Route path={'/error/type1'} component={TypeHome}/>
 
                 <Route path={'/faq'} component={Faq}/>
+
                 <Redirect exact from={'/'} to={'/products/caster'}/>
 
                 <Redirect to={'/error/type1'} />
