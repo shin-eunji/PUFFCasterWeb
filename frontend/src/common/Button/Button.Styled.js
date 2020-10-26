@@ -68,6 +68,7 @@ export const Button = styled.button`
     user-select: none;
     border: 1px solid transparent;
     border-radius: ${pxToRem(6)};
+    z-index: 20;
     &:hover {
         position:relative;
         top: 0;

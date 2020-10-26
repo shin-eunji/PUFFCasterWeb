@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {dots} from "../Data/Routes";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
+import cn from "classnames";
 
 function Dots(props) {
 
@@ -16,7 +17,7 @@ function Dots(props) {
                 {
                     dots.map((item, index) =>
                         (<Dot key={index}
-                              className={item}
+                              className={cn(item, {isActive: item === item})}
                               isActive={sort === item}
                         />)
                     )

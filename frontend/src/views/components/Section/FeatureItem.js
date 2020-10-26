@@ -46,6 +46,7 @@ const SContentContainer = styled(ContentContainer)`
         flex-direction:column-reverse;
         .reverse & {
             flex-direction:column-reverse;
+            margin: 0;
         }
     `} 
 `;
@@ -62,6 +63,9 @@ const Text = styled.div`
     `}
     .reverse & {
         margin-left: ${pxToRem(60)};
+        ${customMedia.lessThan('mobile')`
+            margin-left: ${pxToRem(0)};
+        `}
     }
 `;
 const Thumbnail = styled.div`
