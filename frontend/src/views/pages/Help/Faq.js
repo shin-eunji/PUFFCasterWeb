@@ -5,7 +5,7 @@ import Help from "./index";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
-import BoardList from "./Content/BoardList";
+import Accordion from "./Content/Accordion";
 import Reception from "./Content/Reception";
 import {ContentContainer} from "../../../common/Layout/Components.Styled";
 
@@ -25,7 +25,7 @@ function Faq(props) {
                         </TabTitle>
 
                         <TabPanel>
-                            <BoardList/>
+                            <Accordion/>
                         </TabPanel>
                         <TabPanel>
                             <Reception/>

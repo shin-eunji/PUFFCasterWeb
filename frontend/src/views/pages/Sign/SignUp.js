@@ -17,8 +17,10 @@ function SignUp() {
 
     const {register, handleSubmit, errors} = useForm();
 
-    const onSubmit = data => authActions.signUp(data);
-    console.log("errors", errors);
+    const onSubmit = data => {
+        authActions.signUp(data);
+        console.log("errors", errors);
+    }
 
     return (
         <Container>
@@ -74,7 +76,7 @@ function SignUp() {
                                     minLength: 8,
                                     maxLength: 16,
                                     validate: {
-                                        [ValidationTypes.IS_VALID_PASSWORD]: value => Validation.isValidPassword(value),
+                                        [ValidationTypes.IS_VALID_PASSWORD]: value => Validation.isValidPassword(value)
                                     },
                                 })}
                                 error={errors.passwordRe}
