@@ -13,18 +13,16 @@ function FormMessage(props) {
 
     return (
         <Container>
-            {/*{*/}
-            {/*    name === 'nickname' &&*/}
-            {/*    <ErrorMessage className={'default'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</ErrorMessage>*/}
-            {/*}*/}
+            {
+                name === 'nickname' &&
+                <ErrorMessage className={'default'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</ErrorMessage>
+            }
             {
                 name === 'password' &&
-                <ErrorMessage className={'default'}>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</ErrorMessage>
+                error?.type === "required" && <ErrorMessage className={'error'}>필수정보 입니다.</ErrorMessage>
+                // <ErrorMessage className={'default'}>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</ErrorMessage>
             }
 
-            {
-                error?.type === "required" && <ErrorMessage className={'error'}>필수정보 입니다.</ErrorMessage>
-            }
 
             {
                 error?.type === ValidationTypes.IS_EMAIL && name !== 'email' &&

@@ -2,6 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const jwt = require('jsonwebtoken')
+
+const token = jwt.sign({userId: 456676}, 'haha')
+console.log("token", token);
+
+
 
 const Health = require('./src/controllers/health');
 
@@ -22,7 +28,15 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.use('/health', Health)
-app.use('/todo', Todo)
+
+app.post('/auth/token', (req, res) => {
+    const token = req.body.tokenBinding
+    const data = jwt.decode()
+    res.json({
+        username: 'shin',
+        userId: 324234
+    })
+})
 
 
 

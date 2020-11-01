@@ -10,9 +10,9 @@ export const SContainer = styled.div`
 `
 
 export const customMedia = generateMedia({
-    desktop: "1170px",
-    tablet: "830px",
-    mobile: "500px"
+    desktop: "1600px",
+    tablet: "1170px",
+    mobile: "830px"
 });
 
 export const ContentContainer = styled.div`
@@ -21,14 +21,14 @@ export const ContentContainer = styled.div`
     margin: 0 auto;
     
     ${customMedia.lessThan('desktop')`
-        max-width: 830px;
+        max-width: 1170px;
     `}
     ${customMedia.lessThan('tablet')`
         max-width: 830px;
         width: 100%;    
     `}
     ${customMedia.lessThan('mobile')`
-        max-width: 530px;
+        max-width: 500px;
         width: 100%;    
     `}
 `;
