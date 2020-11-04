@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f2b71b4-de0a-440b-8c71-c068360a3b11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/components/Form/FormMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/components/Form/FormMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/components/Data/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/components/Data/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/components/Visual/Dots.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/components/Visual/Dots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/components/Visual/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/components/Visual/Item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603858846053</updated>
       <workItem from="1603858847457" duration="11564000" />
+      <workItem from="1604482469366" duration="736000" />
     </task>
     <servers />
   </component>
@@ -84,16 +79,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="701" y="424" key="#ESLint" timestamp="1603866383142">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="701" y="424" key="#ESLint/0.0.1680.1050/1680.-67.1920.1080@0.0.1680.1050" timestamp="1603866383142" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1603962849042">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="572" height="448" key="SwitcherDM" timestamp="1604483864377">
+      <screen x="1680" y="-44" width="1920" height="1057" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1680.1050/1680.-67.1920.1080@0.0.1680.1050" timestamp="1603962849042" />
+    <state width="572" height="458" key="SwitcherDM/0.0.1680.1050/1680.-67.1920.1080@1680.-67.1920.1080" timestamp="1604483649941" />
+    <state width="572" height="448" key="SwitcherDM/0.23.1680.1027/1680.-44.1920.1057@1680.-44.1920.1057" timestamp="1604483864377" />
     <state x="538" y="251" width="604" height="548" key="find.popup" timestamp="1603960758778">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
