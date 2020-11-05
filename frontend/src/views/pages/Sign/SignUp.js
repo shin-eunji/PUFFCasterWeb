@@ -67,6 +67,7 @@ function SignUp() {
                                     },
                                 })}
                                 error={errors.password}
+                                message={'비밀번호를 입력하세요'}
                     />
 
                     <InputGroup type={"password"}
@@ -81,7 +82,12 @@ function SignUp() {
                                     },
                                 })}
                                 error={errors.passwordRe}
+                                message={'fjalkjflksdjaklfsjdflsd'}
                     />
+                    {
+                        register?.required === false && '라ㅣ먼ㅇ리머ㅣ마ㅓ링ㅁ어니라ㅓ미ㅏ런이ㅏㅓㅏ'
+
+                    }
 
                     <LoginButton sort={'caster'}
                                  size={'large'}
@@ -113,6 +119,7 @@ const LoginButton = styled(Button)`
 `;
 const LoginText = styled(message)`
     margin-top: ${pxToRem(8)};
+    cursor: pointer;
 `;
 const Text = styled(message)`
     text-align:center;
