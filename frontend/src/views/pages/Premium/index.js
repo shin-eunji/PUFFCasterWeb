@@ -26,8 +26,6 @@ function Premium(props) {
                     <PlanCard data={premiumData.professional}/>
                     <PlanCard data={premiumData.enterprise}/>
                 </PlanContainer>
-                <PlanDetail onClick={() => navigate('/premium/detail')}
-                >플랜 상세 보기</PlanDetail>
             </SContentContainer>
         </Container>
     )

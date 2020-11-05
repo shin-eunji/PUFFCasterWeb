@@ -32,6 +32,10 @@ function FeatureItem(props) {
 const Container = styled.div`
     display:flex;
     margin: 150px 0;
+    ${customMedia.lessThan('mobile')`
+        display:flex;
+        justify-content:center;
+    `}
 `
 const SContentContainer = styled(ContentContainer)`
     position:relative;
@@ -60,6 +64,7 @@ const Text = styled.div`
     ${customMedia.lessThan('mobile')`
         text-align: center;
         margin-top: ${pxToRem(20)};
+        width: 100%;
     `}
     .reverse & {
         margin-left: ${pxToRem(60)};
