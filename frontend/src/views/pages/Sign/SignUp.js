@@ -39,6 +39,7 @@ function SignUp() {
                                     },
                                 })}
                                 error={errors.email}
+                                message={'한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)\n'}
                     />
 
                     <InputGroup type={"text"}

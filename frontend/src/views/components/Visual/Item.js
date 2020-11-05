@@ -21,6 +21,7 @@ function Item (props) {
         sort,
         caution,
         thumbnail,
+        route
     } = props;
 
     return (
@@ -55,7 +56,7 @@ function Item (props) {
 
             </SContentContainer>
 
-            <Dots sort={sort}/>
+            <Dots sort={sort} />
 
             <Nav sort={sort}/>
         </Container>

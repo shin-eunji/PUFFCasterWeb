@@ -54,7 +54,18 @@ export const SubRoutes = [
     },
 ]
 
-export const dots = ['caster', 'chat', 'cam']
+export const dots = [
+    {
+        sort: 'caster',
+        to: '/products/caster',
+    }, {
+        sort: 'chat',
+        to: '/products/chat',
+    }, {
+        sort: 'cam',
+        to: '/products/cam',
+}
+]
 
 export const info = [
     {

@@ -4,11 +4,13 @@ import {dots} from "../Data/Routes";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import cn from "classnames";
+import {navigate} from "../../../lib/History";
 
 function Dots(props) {
 
     const {
-        sort
+        sort,
+        route
     } = props;
 
     return (
@@ -17,8 +19,9 @@ function Dots(props) {
                 {
                     dots.map((item, index) =>
                         (<Dot key={index}
-                              className={cn(item, {isActive: item === item})}
-                              isActive={sort === item}
+                              className={cn(item.sort, {isActive: sort === item.sort})}
+                              isActive={sort === item.sort}
+                              onClick={() => navigate(item.to)}
                         />)
                     )
                 }
