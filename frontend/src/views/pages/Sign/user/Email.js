@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {LoginContainer, SContainer} from "../../../../common/Layout/Components.Styled";
+import {customMedia, LoginContainer, SContainer} from "../../../../common/Layout/Components.Styled";
 import {PageTitle} from "../../../components/Data/Title";
 import AuthText from "../../../components/Login/Title";
 import {Images} from "../../../../common/Images";
@@ -33,11 +33,17 @@ function Email (props) {
 }
 
 const Container = styled(SContainer)`
+    ${customMedia.lessThan('mobile')`
+        height: 100%;
+    `}
 `
 const SContentContainer = styled(LoginContainer)`
    img {
       margin-bottom: ${pxToRem(35)};
    }
+   ${customMedia.lessThan('mobile')`
+        margin: 0 ${pxToRem(30)};
+    `}
 `;
 const NoticeContent = styled.div`
     display:flex;
@@ -45,7 +51,6 @@ const NoticeContent = styled.div`
     align-items:center;
     justify-content:center;
     width: ${pxToRem(720)};
-    height: ${pxToRem(256)};
     border-radius: ${pxToRem(6)};
     background: #1b2227;
     padding: ${pxToRem(40)} ${pxToRem(68)};
@@ -61,6 +66,10 @@ const NoticeContent = styled.div`
         font-size: ${pxToRem(14)};
         font-weight: 300;
     }
+    ${customMedia.lessThan('mobile')`
+        width: 100%;
+        padding: ${pxToRem(40)} ${pxToRem(32)};
+    `}
 `;
 const SendButton = styled(Button)`
     width: ${pxToRem(180)};

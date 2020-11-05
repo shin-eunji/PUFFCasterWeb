@@ -118,6 +118,10 @@ export const Button = styled.button`
         color: ${Color.TOPAZ};
         font-size:  ${pxToRem(16)};
         font-weight: 500;
+        &:hover {
+            color: ${Color.TOPAZ};
+            opacity: .4;
+        }
     `}
     ${props => props.sort === 'lineDark' && `
         border: 1px solid #444;

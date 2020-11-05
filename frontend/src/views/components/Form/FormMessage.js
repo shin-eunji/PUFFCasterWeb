@@ -9,29 +9,18 @@ function FormMessage(props) {
     const {
         name,
         error,
+        register,
     } = props;
 
     return (
         <Container>
             {
-                name === 'nickname' &&
-                <ErrorMessage className={'default'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</ErrorMessage>
+                register === {required: false} &&
+                <Message className={'error'}>필수 정보입니다.</Message>
             }
-            {
-                name === 'password' &&
-                error?.type === "required" && <ErrorMessage className={'error'}>필수정보 입니다.</ErrorMessage>
-                // <ErrorMessage className={'default'}>8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</ErrorMessage>
-            }
-
-
             {
                 error?.type === ValidationTypes.IS_EMAIL && name !== 'email' &&
                 <ErrorMessage className={'error'}>이메일 양식이 올바르지 않습니다.</ErrorMessage>
-            }
-                {name === 'nickname' ?
-                (<ErrorMessage className={'default'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</ErrorMessage>) :
-                (error?.type === ValidationTypes.IS_VALID_NICKNAME && name !== 'nickname' &&
-                <ErrorMessage className={'error'}>한글과 영문을 포함한 15자까지 가능합니다. (특수기호 사용 불가)</ErrorMessage>)
             }
             {
                 error?.type === ValidationTypes.IS_VALID_PASSWORD && name !== 'password' &&
@@ -53,6 +42,9 @@ function FormMessage(props) {
 
 const Container = styled.div`
     position:relative;
+`;
+const Message = styled.div`
+    
 `;
 const ErrorMessage = styled.div`
     position: absolute;

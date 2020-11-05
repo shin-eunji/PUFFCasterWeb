@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Input} from "../../../../common/Input/Input.Styled";
 import {pxToRem} from "../../../../common/Text/Text.Styled";
-import FormMessage from "../../Form/FormMessage";
 import {Button} from "../../../../common/Button/Button.Styled";
+import Message from "../../Form/Message";
 
 function InputGroup(props) {
 
@@ -30,7 +30,11 @@ function InputGroup(props) {
                     <ChangeButton>중복확인</ChangeButton>
                 }
             </Container>
-            <FormMessage name={name} error={error} register={register}/>
+            <Message name={name}
+                     error={error}
+                     register={register}
+            />
+
         </>
     )
 
