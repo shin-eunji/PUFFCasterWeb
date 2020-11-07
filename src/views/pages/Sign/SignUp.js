@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useForm} from "react-hook-form";
 import {navigate} from "../../../lib/History";
 
-import {LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
+import {customMedia, LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
 import {PageTitle} from "../../components/Data/Title";
 import {authActions} from "../../../redux/actionCreators";
 import {Button} from "../../../common/Button/Button.Styled";
@@ -111,6 +111,9 @@ function SignUp() {
 }
 
 const Container = styled(SContainer)`
+    ${customMedia.lessThan('mobile')`
+        height: 100%;    
+    `}
 `
 const SContentContainer = styled(LoginContainer)`
 `;

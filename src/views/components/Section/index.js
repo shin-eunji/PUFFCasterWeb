@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FeatureItem from "./FeatureItem";
+import {pxToRem} from "../../../common/Text/Text.Styled";
 
 function Features(props) {
 

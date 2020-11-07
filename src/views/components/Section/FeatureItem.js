@@ -35,6 +35,7 @@ const Container = styled.div`
     ${customMedia.lessThan('mobile')`
         display:flex;
         justify-content:center;
+        margin: 80px 0;
     `}
 `
 const SContentContainer = styled(ContentContainer)`
@@ -63,7 +64,7 @@ const Text = styled.div`
     `}
     ${customMedia.lessThan('mobile')`
         text-align: center;
-        margin-top: ${pxToRem(20)};
+        margin: ${pxToRem(20)} ${pxToRem(20)} 0;
         width: 100%;
     `}
     .reverse & {
@@ -103,6 +104,11 @@ const Preview = styled.div`
     ${customMedia.lessThan('tablet')`
         width: ${pxToRem(420)};
         height: ${pxToRem(330)};
+    `}
+    ${customMedia.lessThan('mobile')`
+        width: 100%;
+        height: ${pxToRem(330)};
+        margin: 0 ${pxToRem(20)};
     `}
 `;
 export default FeatureItem;

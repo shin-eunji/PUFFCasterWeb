@@ -41,6 +41,9 @@ export const LoginContainer = styled.div`
     align-items:center;
     justify-content:center;
     padding-bottom: ${pxToRem(80)};
+    ${customMedia.lessThan('mobile')`
+        padding: ${pxToRem(30)} 0;
+    `}
 `;
 
 export const IconBox = styled.div`

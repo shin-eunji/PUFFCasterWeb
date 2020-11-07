@@ -39,7 +39,7 @@ function Reception(props) {
 }
 
 const Container = styled.div`
-    width: ${pxToRem(800)};
+    width: 100%;
     margin: ${pxToRem(20)} auto;
 `
 const Text = styled.div`
@@ -58,7 +58,7 @@ const Description = styled.div`
 
 const Content = styled.form`
     input {
-        width: ${pxToRem(400)};
+        width: 100%;
         height: ${pxToRem(50)};
         border-radius: ${pxToRem(6)};
         border: 1px solid #ccc;
@@ -69,7 +69,7 @@ const Content = styled.form`
         margin-top: ${pxToRem(20)};
     }
     textarea {
-        width: ${pxToRem(800)};
+        width: 100%;
         height: ${pxToRem(274)};
         border-radius: 6px;
         border: 1px solid #ccc;
@@ -80,7 +80,7 @@ const Content = styled.form`
         display:flex;
         align-items:center;
         justify-content: space-between;
-        width: ${pxToRem(400)};
+        width: 100%;
         height: ${pxToRem(50)};
         border-radius: ${pxToRem(6)};
         border: 1px solid #ccc;

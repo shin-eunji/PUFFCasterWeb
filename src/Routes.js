@@ -11,7 +11,6 @@ import SignUp from "./views/pages/Sign/SignUp";
 import PasswordNew from "./views/pages/Sign/user/PasswordNew";
 import PasswordReset from "./views/pages/Sign/user/PasswordReset";
 import Email from "./views/pages/Sign/user/Email";
-import Error from "./views/pages/Error/index";
 import MyPage from "./views/pages/MyPage";
 import Terms from "./views/pages/Help/Terms";
 import Policy from "./views/pages/Help/Policy";

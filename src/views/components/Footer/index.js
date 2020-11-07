@@ -46,7 +46,7 @@ function Footer(props) {
 
 const Container = styled.div`
     background: #000;
-    height: ${pxToRem(150)};
+    height: ${pxToRem(220)};
 `
 const SContentContainer = styled(ContentContainer)`
     position:relative;

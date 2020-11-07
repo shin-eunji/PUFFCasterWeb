@@ -6,6 +6,7 @@ import {navigate} from "../../../lib/History";
 import {Color} from "../../../common/Color/Color.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {SubRoutes} from "../Data/Routes";
+import {customMedia} from "../../../common/Layout/Components.Styled";
 
 function Nav(props) {
 
@@ -36,6 +37,7 @@ const Container = styled.div`
     justify-content:center;
     height: ${pxToRem(80)};
     background: ${Color.LIGHT_DARK};
+    overflow: hidden;
 `
 const NavItem = styled.div`
     position:relative;
@@ -59,7 +61,8 @@ const NavItem = styled.div`
             background: ${Color.DARK};
             transform: skew(-15deg);
             z-index: -1;
-      }
+            
+        }
     }
 `
 const Icon = styled.div`

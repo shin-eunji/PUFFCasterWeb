@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Type from "./Type";
-import {LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
+import {customMedia, LoginContainer, SContainer} from "../../../common/Layout/Components.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import TypeHome from "./TypeHome";
 import {Switch, Route} from "react-router-dom";
