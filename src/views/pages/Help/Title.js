@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {pxToRem} from "../../../common/Text/Text.Styled";
+import {customMedia} from "../../../common/Layout/Components.Styled";
 
 function Title (props) {
 
@@ -32,5 +33,8 @@ const Container = styled.div`
         font-weight: 300;
         line-height: 1.2;
     }
+    ${customMedia.lessThan('mobile')`
+        margin-bottom: ${pxToRem(30)};
+    `}
 `
 export default Title;

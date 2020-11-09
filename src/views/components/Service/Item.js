@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia} from "../../../common/Layout/Components.Styled";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Color} from "../../../common/Color/Color.Styled";
 import {Button} from "../../../common/Button/Button.Styled";
@@ -81,6 +81,10 @@ const Comment = styled.div`
     color: ${Color.WHITE};
     font-size: ${pxToRem(24)};
     font-weight: 300;
+    text-align:center;
     margin-top: ${pxToRem(60)};
+    ${customMedia.lessThan('mobile')`
+        font-size: ${pxToRem(20)};    
+    `}
 `;
 export default Item;

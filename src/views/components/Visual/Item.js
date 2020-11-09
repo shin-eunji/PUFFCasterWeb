@@ -125,7 +125,7 @@ const Text = styled.div`
         margin-bottom: ${pxToRem(35)};
          
         ${customMedia.lessThan('mobile')`
-            font-size: ${pxToRem(38)};
+            font-size: ${pxToRem(32)};
         `}
     }
     p {
@@ -136,7 +136,7 @@ const Text = styled.div`
         margin-bottom: ${pxToRem(14)}; 
         
         ${customMedia.lessThan('mobile')`
-            font-size: ${pxToRem(14)};
+            font-size: ${pxToRem(13)};
         `}
     }
     .more {

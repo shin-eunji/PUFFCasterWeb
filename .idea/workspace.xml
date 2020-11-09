@@ -21,7 +21,23 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2b71b4-de0a-440b-8c71-c068360a3b11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Layout/Components.Styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Layout/Components.Styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Navigation/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Navigation/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Section/FeatureItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Section/FeatureItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Section/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Service/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Service/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Visual/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Visual/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Error/TypeHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Error/TypeHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Error/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Error/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Content/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Content/Accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Content/Reception.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Content/Reception.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Policy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Policy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Terms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Terms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Help/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Help/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/Sign/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Sign/SignUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +46,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1jUVq6qE63Lv81rf9chfrbNy2Hg" />
   <component name="ProjectViewState">
@@ -56,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend/public" />
     </key>
@@ -74,7 +94,8 @@
       <workItem from="1604581805788" duration="392000" />
       <workItem from="1604582207905" duration="1050000" />
       <workItem from="1604628474397" duration="1500000" />
-      <workItem from="1604630655433" duration="1106000" />
+      <workItem from="1604630655433" duration="3277000" />
+      <workItem from="1604638151864" duration="6196000" />
     </task>
     <servers />
   </component>
@@ -98,6 +119,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="701" y="424" key="#ESLint/0.0.1680.1050/1680.-67.1920.1080@0.0.1680.1050" timestamp="1603866383142" />
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604638456495">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1604638456495" />
     <state width="1659" height="295" key="GridCell.Tab.0.bottom" timestamp="1604634413474">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -114,17 +139,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1659" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604634413473" />
-    <state width="501" height="446" key="SwitcherDM" timestamp="1604565746906">
+    <state width="501" height="446" key="SwitcherDM" timestamp="1604737776612">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1680.1050/1680.-67.1920.1080@0.0.1680.1050" timestamp="1603962849042" />
     <state width="572" height="458" key="SwitcherDM/0.0.1680.1050/1680.-67.1920.1080@1680.-67.1920.1080" timestamp="1604483649941" />
-    <state width="501" height="446" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1604565746906" />
+    <state width="501" height="446" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1604737776612" />
     <state width="572" height="448" key="SwitcherDM/0.23.1680.1027/1680.-44.1920.1057@1680.-44.1920.1057" timestamp="1604483864377" />
-    <state x="538" y="251" width="604" height="548" key="find.popup" timestamp="1604581909249">
+    <state x="538" y="251" width="604" height="548" key="find.popup" timestamp="1604730744402">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="538" y="251" width="604" height="548" key="find.popup/0.0.1680.1050/1680.-67.1920.1080@0.0.1680.1050" timestamp="1603960758778" />
-    <state x="538" y="251" width="604" height="548" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604581909249" />
+    <state x="538" y="251" width="604" height="548" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604730744402" />
   </component>
 </project>

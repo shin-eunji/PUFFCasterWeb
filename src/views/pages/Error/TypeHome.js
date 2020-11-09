@@ -6,7 +6,7 @@ import AuthText from "../../components/Login/Title";
 import {Button} from "../../../common/Button/Button.Styled";
 import {navigate} from "../../../lib/History";
 import {pxToRem} from "../../../common/Text/Text.Styled";
-import {ContentContainer, SContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia, SContainer} from "../../../common/Layout/Components.Styled";
 
 function TypeHome(props) {
 

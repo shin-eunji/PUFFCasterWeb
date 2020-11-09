@@ -7,7 +7,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import Accordion from "./Content/Accordion";
 import Reception from "./Content/Reception";
-import {ContentContainer} from "../../../common/Layout/Components.Styled";
+import {ContentContainer, customMedia} from "../../../common/Layout/Components.Styled";
 
 function Faq(props) {
 
@@ -41,7 +41,6 @@ const Container = styled.div`
     margin: ${pxToRem(160)} 0 ${pxToRem(150)};
 `
 const SContentContainer = styled(ContentContainer)`
-    
 `;
 const Content = styled.div`
     
@@ -50,6 +49,7 @@ const TabTitle = styled(TabList)`
     display:flex;
     align-items:center;
     justify-content: center;
+    width: 100%;
 `;
 const Title = styled(Tab)`
     display:flex;
@@ -71,5 +71,8 @@ const Title = styled(Tab)`
         font-size: ${pxToRem(16)};
         font-weight: 500;
     }
+    ${customMedia.lessThan('mobile')`
+        width: ${pxToRem(280)};
+    `}
 `;
 export default Faq;

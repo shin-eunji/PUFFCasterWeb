@@ -48,7 +48,6 @@ function Accordion(props) {
 }
 
 const Container = styled.div`
-    width: ${pxToRem(800)};
     margin: ${pxToRem(20)} auto;
     h2 {
         color: #000;
